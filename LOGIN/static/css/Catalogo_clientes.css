@@ -45,4 +45,17 @@ hr.solid {
     height: 38px;
     
 }
-
+h5{
+    color: black;
+}
+.card{
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 1.5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
