@@ -1,0 +1,830 @@
+/*
+	@name flujos_inmobiliaria
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1920px;  margin-left: auto; margin-right: auto;  }
+
+#_bg___1_quienes_somos {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 1482px;
+	background:rgba(255,255,255,1);
+}
+
+#seccion1 {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 1482px;
+}
+#object {
+	top: -1px;
+	left: 0px;
+	width: 1920px;
+	height: 1726px;
+}
+
+#etienne_beauregard_riverin_b0acvavsx8e_unsplash_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 1726px;
+}
+
+
+#etienne_beauregard_riverin_b0acvavsx8e_unsplash_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 1726px;
+	background:rgba(255,255,255,0);
+	background: -webkit-linear-gradient(-86.597362136274deg , rgba(255,255,255,1) 0%, rgba(146.62,146.01,146.01,1) 26%, rgba(140.25,140.25,140.25,0.79) 73%, rgba(173.19,173.19,173.19,1) 100%);
+	background: -o-linear-gradient(-86.597362136274deg , rgba(255,255,255,1) 0%, rgba(146.62,146.01,146.01,1) 26%, rgba(140.25,140.25,140.25,0.79) 73%, rgba(173.19,173.19,173.19,1) 100%);
+	background: -moz-linear-gradient(-86.597362136274deg , rgba(255,255,255,1) 0%, rgba(146.62,146.01,146.01,1) 26%, rgba(140.25,140.25,140.25,0.79) 73%, rgba(173.19,173.19,173.19,1) 100%);
+	background: -ms-linear-gradient(-86.597362136274deg , rgba(255,255,255,1) 0%, rgba(146.62,146.01,146.01,1) 26%, rgba(140.25,140.25,140.25,0.79) 73%, rgba(173.19,173.19,173.19,1) 100%);
+	background: linear-gradient(-86.597362136274deg , rgba(255,255,255,1) 0%, rgba(146.62,146.01,146.01,1) 26%, rgba(140.25,140.25,140.25,0.79) 73%, rgba(173.19,173.19,173.19,1) 100%);
+}
+
+#nav {
+	top: 32px;
+	left: 150px;
+	width: 1621px;
+	height: 75px;
+}
+
+#rectangle {
+	top: 0px;
+	left: 1320px;
+	width: 270px;
+	height: 79px;
+	-ms-border-radius: 18px;
+	-o-border-radius: 18px;
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px;
+	border-radius: 18px;
+	border: 2px solid #000000;
+	background:rgba(112,198,219,1);
+}
+
+#group_5 {
+	top: 19px;
+	left: 1351px;
+	width: 216px;
+	height: 36px;
+}
+
+#work_with_us {
+	top: 5px;
+	left: 0px;
+	width: 183.18px;
+	height: 40px;
+	overflow: hidden;
+	font-family: DM Sans;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+#arrow_white {
+	top: 11.45px;
+	left: 183.02px;
+	width: 32.98px;
+	height: 15.76px;
+}
+
+#path {
+	top: 0px;
+	left: 0px;
+	width: 32.98px;
+	height: 15.76px;
+}
+
+
+#nav_link {
+	top: 24px;
+	left: 1006px;
+	width: 226px;
+	height: 40px;
+	overflow: hidden;
+	font-family: DM Sans;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#000000;
+}
+
+
+#nav_link_ek1 {
+	top: 26px;
+	left: 827px;
+	width: 139px;
+	height: 40px;
+	overflow: hidden;
+	font-family: DM Sans;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#000000;
+}
+
+
+#nav_link_ek2 {
+	top: 25px;
+	left: 579px;
+	width: 208px;
+	height: 40px;
+	overflow: hidden;
+	font-family: DM Sans;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#000000;
+}
+
+
+#_nav_link_ek3 {
+	top: 25px;
+	left: 404px;
+	width: 135px;
+	height: 40px;
+	overflow: hidden;
+	font-family: DM Sans;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#000000;
+}
+
+
+#_logo3_1 {
+	top: 0px;
+	left: 0px;
+	width: 233px;
+	height: 75px;
+}
+
+#section4_quienes_somos {
+	top: 130px;
+	left: 0px;
+	width: 1920px;
+	height: 1352px;
+}
+#good_hands {
+	top: 27px;
+	left: 192px;
+	width: 1587px;
+	height: 805px;
+}
+
+#rectangle_ek1 {
+	top: 10px;
+	left: 0px;
+	width: 627px;
+	height: 585px;
+}
+
+#right_side {
+	top: 0px;
+	left: 693px;
+	width: 894px;
+	height: 805px;
+}
+
+#you_re_in_good_hands {
+	top: 52px;
+	left: 0px;
+	width: 925.89px;
+	height: 100px;
+	overflow: hidden;
+	font-family: DM Sans;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+#nav_link_ek4 {
+	top: 168px;
+	left: 689px;
+	width: 843.5px;
+	height: 447.5px;
+	overflow: hidden;
+	font-family: DM Sans;
+	font-size: 25px;
+	text-align: justified;
+	line-height: 28px;
+	color:#000000;
+}
+
+#group_7 {
+	top: 31.72px;
+	left: 885px;
+	width: 826px;
+	height: 16.1px;
+}
+
+#rectangle_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 826px;
+	height: 16.1px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background:rgba(255,255,255,0);
+	background: -webkit-linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+	background: -moz-linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#footer {
+	top: 914px;
+	left: 0px;
+	width: 1920px;
+	height: 568px;
+}
+#group_7_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 11px;
+}
+
+#rectangle_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 11px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	transform:rotate(180deg);
+	background:rgba(255,255,255,0);
+	background: -webkit-linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+	background: -moz-linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(-180deg , rgba(112,198,219,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#copyright {
+	top: 486.08px;
+	left: px;
+	width: 1920px;
+	height: 81.92px;
+}
+
+#base_background {
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 81.92px;
+	background:rgba(0,0,0,1);
+}
+
+
+#title {
+	top: 14px;
+	left: 745px;
+	width: 444px;
+	height: 48px;
+	overflow: hidden;
+	font-family: Nunito Sans;
+	font-size: 20px;
+	text-align: left;
+	line-height: 34.000000953674px;
+	color:#FFFFFF;
+}
+
+#our_address {
+	top: 56px;
+	left: 1415px;
+	width: 333px;
+	height: 280px;
+}
+
+#french_450_resistencia__chaco___argentina {
+	top: 85px;
+	left: 0px;
+	width: 321.33px;
+	height: 93.99px;
+	overflow: hidden;
+	font-family: Nunito Sans;
+	font-size: 22px;
+	text-align: left;
+	line-height: 37.400001049042px;
+	color:#FFFFFF;
+}
+
+#social_media {
+	top: 213px;
+	left: 5px;
+	width: 328px;
+	height: 67px;
+}
+#button___normal_icon {
+	top: 11.5px;
+	left: 0px;
+	width: 44px;
+	height: 44px;
+}
+#normal_icon {
+	top: 0px;
+	left: 0px;
+	width: 44px;
+	height: 44px;
+}
+
+#base_background_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 44px;
+	height: 44px;
+	-ms-border-radius: 22px / 22px;
+	-o-border-radius: 22px / 22px;
+	-moz-border-radius: 22px / 22px;
+	-webkit-border-radius: 22px / 22px;
+	border-radius: 22px / 22px;
+	background:rgba(51,51,51,1);
+}
+
+#icons___facebook {
+	top: 10px;
+	left: 10px;
+	width: 24px;
+	height: 24px;
+}
+
+#brand___facebook {
+	top: 2px;
+	left: 2px;
+	width: 20px;
+	height: 19.88px;
+}
+
+#button___normal_icon_ek1 {
+	top: 11.5px;
+	left: 68px;
+	width: 44px;
+	height: 44px;
+}
+#normal_icon_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 44px;
+	height: 44px;
+}
+
+#base_background_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 44px;
+	height: 44px;
+	-ms-border-radius: 22px / 22px;
+	-o-border-radius: 22px / 22px;
+	-moz-border-radius: 22px / 22px;
+	-webkit-border-radius: 22px / 22px;
+	border-radius: 22px / 22px;
+	background:rgba(51,51,51,1);
+}
+
+#icons___instagram {
+	top: 10px;
+	left: 10px;
+	width: 24px;
+	height: 24px;
+}
+
+#brand___instagram {
+	top: 3.01px;
+	left: 3px;
+	width: 18.01px;
+	height: 18.04px;
+}
+
+#button___normal_icon_ek2 {
+	top: 11.5px;
+	left: 136px;
+	width: 44px;
+	height: 44px;
+}
+#normal_icon_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 44px;
+	height: 44px;
+}
+
+#base_background_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 44px;
+	height: 44px;
+	-ms-border-radius: 22px / 22px;
+	-o-border-radius: 22px / 22px;
+	-moz-border-radius: 22px / 22px;
+	-webkit-border-radius: 22px / 22px;
+	border-radius: 22px / 22px;
+	background:rgba(51,51,51,1);
+}
+
+#icons__twitter {
+	top: 10px;
+	left: 10px;
+	width: 24px;
+	height: 24px;
+}
+
+#brand___twitter {
+	top: 4px;
+	left: 1.54px;
+	width: 20.92px;
+	height: 17px;
+}
+
+#button___normal_icon_ek3 {
+	top: 11.5px;
+	left: 204px;
+	width: 44px;
+	height: 44px;
+}
+#normal_icon_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 44px;
+	height: 44px;
+}
+
+#base_background_ek4 {
+	top: 0px;
+	left: 0px;
+	width: 44px;
+	height: 44px;
+	-ms-border-radius: 22px / 22px;
+	-o-border-radius: 22px / 22px;
+	-moz-border-radius: 22px / 22px;
+	-webkit-border-radius: 22px / 22px;
+	border-radius: 22px / 22px;
+	background:rgba(51,51,51,1);
+}
+
+#icons___youtube {
+	top: 10px;
+	left: 10px;
+	width: 24px;
+	height: 24px;
+}
+
+#brand___youtube {
+	top: 5px;
+	left: 1.99px;
+	width: 20.01px;
+	height: 14.01px;
+}
+
+
+#nuestra_direcci_n {
+	top: 0px;
+	left: 0px;
+	width: 325px;
+	height: 66px;
+	overflow: hidden;
+	font-family: Khula;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 38.999998569489px;
+	color:#3D3D3D;
+}
+
+#contactos {
+	top: 56px;
+	left: 993px;
+	width: 392px;
+	height: 305px;
+}
+
+#contactanos_via_web {
+	top: 96px;
+	left: 0px;
+	width: 227px;
+	height: 76.63px;
+	overflow: hidden;
+	font-family: Nunito Sans;
+	font-size: 22px;
+	text-align: left;
+	line-height: 37.400001049042px;
+	color:#FFFFFF;
+}
+
+
+#tel__362_4665582 {
+	top: 166px;
+	left: 0px;
+	width: 246px;
+	height: 76.63px;
+	overflow: hidden;
+	font-family: Nunito Sans;
+	font-size: 22px;
+	text-align: left;
+	line-height: 37.400001049042px;
+	color:#FFFFFF;
+}
+
+
+#email__info_inmobiliariadomus_com_ar {
+	top: 243px;
+	left: 0px;
+	width: 408px;
+	height: 77px;
+	overflow: hidden;
+	font-family: Nunito Sans;
+	font-size: 22px;
+	text-align: left;
+	line-height: 37.400001049042px;
+	color:#FFFFFF;
+}
+
+
+#contacto {
+	top: 0px;
+	left: 0px;
+	width: 241px;
+	height: 92.11px;
+	overflow: hidden;
+	font-family: Khula;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 38.999998569489px;
+	color:#3D3D3D;
+}
+
+#payment {
+	top: 49px;
+	left: 122px;
+	width: 413px;
+	height: 326px;
+}
+#form_elements___logo {
+	top: 0px;
+	left: 7px;
+	width: 379px;
+	height: 158.94px;
+}
+
+#logo3_2 {
+	top: 0px;
+	left: 0px;
+	width: 340px;
+	height: 118px;
+}
+
+
+#nos_comprometemos_a_materializar_el_hogar_de_sus_sue_os {
+	top: 171px;
+	left: 0px;
+	width: 429px;
+	height: 106px;
+	overflow: hidden;
+	font-family: Nunito Sans;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+	line-height: 37.400001049042px;
+	color:#FFFFFF;
+}
+
+#payments {
+	top: 278px;
+	left: 7px;
+	width: 326px;
+	height: 47.57px;
+}
+#paypal {
+	top: 6.28px;
+	left: 0px;
+	width: 92px;
+	height: 35px;
+}
+#group_6_ek1 {
+	top: 5.83px;
+	left: px;
+	width: 92px;
+	height: 24.79px;
+}
+
+#vector {
+	top: 0px;
+	left: 0px;
+	width: 51.28px;
+	height: 24.79px;
+}
+
+
+#vector_ek1 {
+	top: 0px;
+	left: 51px;
+	width: 40.96px;
+	height: 20.42px;
+}
+
+#visa {
+	top: 6.28px;
+	left: 116px;
+	width: 75px;
+	height: 35px;
+}
+#group_7_ek2 {
+	top: 5.83px;
+	left: 0px;
+	width: 75px;
+	height: 24.79px;
+}
+
+#polygon9 {
+	top: 0px;
+	left: 26px;
+	width: 9.88px;
+	height: 24px;
+}
+
+
+#path11 {
+	top: 0px;
+	left: 36px;
+	width: 18.22px;
+	height: 24.79px;
+}
+
+
+#path13 {
+	top: 0px;
+	left: 53px;
+	width: 21.8px;
+	height: 24px;
+}
+
+
+#path15 {
+	top: 0px;
+	left: 6px;
+	width: 21.42px;
+	height: 23.97px;
+}
+
+
+#path17 {
+	top: 0px;
+	left: 0px;
+	width: 14.75px;
+	height: 13.05px;
+}
+
+#mastercard {
+	top: 6.28px;
+	left: 215px;
+	width: 51px;
+	height: 35px;
+}
+#group_8 {
+	top: 0px;
+	left: 0px;
+	width: 51px;
+	height: 35px;
+}
+#group {
+	top: 0px;
+	left: 0px;
+	width: 51px;
+	height: 35px;
+}
+
+#vector_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 51px;
+	height: 35px;
+}
+
+
+#vector_ek3 {
+	top: 6px;
+	left: 19px;
+	width: 13.45px;
+	height: 22.8px;
+}
+
+
+#vector_ek4 {
+	top: 3px;
+	left: 3px;
+	width: 22.61px;
+	height: 29px;
+}
+
+
+#vector_ek5 {
+	top: 26px;
+	left: 47px;
+	width: 1.16px;
+	height: 0.56px;
+}
+
+
+#vector_ek6 {
+	top: 3px;
+	left: 26px;
+	width: 22.61px;
+	height: 29px;
+}
+
+#about {
+	top: 56px;
+	left: 621px;
+	width: 231px;
+	height: 319px;
+}
+
+#m_todos_de_pago {
+	top: 98px;
+	left: 0px;
+	width: 208px;
+	height: 93.94px;
+	overflow: hidden;
+	font-family: Nunito Sans;
+	font-size: 22px;
+	text-align: left;
+	line-height: 37.400001049042px;
+	color:#FFFFFF;
+}
+
+
+#nuestro_equipo {
+	top: 240px;
+	left: 0px;
+	width: 247px;
+	height: 93.94px;
+	overflow: hidden;
+	font-family: Nunito Sans;
+	font-size: 22px;
+	text-align: left;
+	line-height: 37.400001049042px;
+	color:#FFFFFF;
+}
+
+
+#sobre_nosotros {
+	top: 0px;
+	left: 0px;
+	width: 241px;
+	height: 111.74px;
+	overflow: hidden;
+	font-family: Khula;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 38.999998569489px;
+	color:#3D3D3D;
+}
+
+
+#t_rminos_y_condiciones {
+	top: 171px;
+	left: 0px;
+	width: 247px;
+	height: 93.94px;
+	overflow: hidden;
+	font-family: Nunito Sans;
+	font-size: 22px;
+	text-align: left;
+	line-height: 37.400001049042px;
+	color:#FFFFFF;
+}
+
+
+
+/* Add your custom CSS here */
