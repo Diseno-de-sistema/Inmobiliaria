@@ -918,6 +918,7 @@ div { position: absolute; }
 }
 
 #footer {
+	background-color: #70C6DB;
 	top: 2647px;
 	left: 0px;
 	width: 1920px;
