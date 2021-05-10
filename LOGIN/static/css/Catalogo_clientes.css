@@ -1,0 +1,48 @@
+body{
+    background: url(../../../images/18947.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar{
+   opacity: 1; 
+}
+
+.navbar-nav{
+    font-size: 1.5rem;
+}
+
+#cat_prop{
+    color: rgb(255, 255, 255);
+}
+
+#sub_prop{
+    margin-left: 6%;
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+}
+
+.titulos{
+    margin-top: 7%;
+    margin-left: 10%;
+}
+hr.solid {
+    margin-right: 67%;
+    border-top: 10px solid rgb(255, 255, 255);
+  }
+  .filt_botones{
+      width: 1200px;
+      height: 50px;
+      margin-top: 2%;
+      margin-left: 15%;
+      margin-right: 15%;
+  }
+.btn-group{
+    width: 180px;
+    height: 40px;
+}
+.btn{
+    width: 170px;
+    height: 38px;
+    
+}
+
