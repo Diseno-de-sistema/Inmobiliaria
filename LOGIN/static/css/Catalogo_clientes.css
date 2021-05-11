@@ -1,5 +1,5 @@
 body{
-    background: url(../../../images/18947.jpg) no-repeat center center fixed;
+    background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -29,33 +29,27 @@ hr.solid {
     margin-right: 67%;
     border-top: 10px solid rgb(255, 255, 255);
   }
-  .filt_botones{
-      width: 1200px;
-      height: 50px;
-      margin-top: 2%;
-      margin-left: 15%;
-      margin-right: 15%;
-  }
-.btn-group{
-    width: 180px;
-    height: 40px;
-}
-.btn{
-    width: 170px;
-    height: 38px;
+ #options-row{
+     
+     margin-left: 15%;
+     margin-right: 15%;
+ }
+
     
-}
+
 h5{
     color: black;
 }
 .card{
-    border-top-left-radius: 6%;
-    border-top-right-radius: 6%;
-    border-bottom-left-radius: 6%;
-    border-bottom-right-radius: 6%;
+    border-radius: 8%;
     display: inline-block;
     margin-left: 3%;
     margin-right: 1.5%;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
+}
+.card-img-top{
+    border-radius: 8%;
+    width: 256px;
+    height: 202.67px;
 }
