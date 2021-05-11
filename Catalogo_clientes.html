@@ -41,55 +41,68 @@
     </nav>
     <div class="titulos">
         <h1 id="cat_prop"><b>Catálogo de Propiedades</b></h1><hr class="solid">
-        <h2 id="sub_prop">Encontra tu proximo lugar para vivir</h2>
+        <h2 id="sub_prop">Encontrá tu proximo lugar para vivir</h2>
     </div>
-    <div class="filt_botones text-center">
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-          Tipo de Propiedad
-        </button>
-        <ul class="dropdown-menu dropdown-menu-lg-end">
-          <li><button class="dropdown-item" type="button">Action</button></li>
-          <li><button class="dropdown-item" type="button">Another action</button></li>
-          <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-    </div>
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-          Ubicacion        
-        </button>
-        <ul class="dropdown-menu dropdown-menu-lg-end">
-          <li><button class="dropdown-item" type="button">Action</button></li>
-          <li><button class="dropdown-item" type="button">Another action</button></li>
-          <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-    </div>
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-          Precio           
-        </button>
-        <ul class="dropdown-menu dropdown-menu-lg-end">
-          <li><button class="dropdown-item" type="button">Action</button></li>
-          <li><button class="dropdown-item" type="button">Another action</button></li>
-          <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-    </div>
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                Estado           
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
-            </ul>
+ 
+    <div id="options-row" class="row d-flex justify-content-around">
+        <div class="col-sm">
+            <div class="form-group">
+                </br>
+                <select class="form-control shadow" id="exampleFormControlSelect1">
+                  <option>-TIPO DE PROPIEDAD-</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+            </div>
+            
         </div>
+        <div class="col-sm">
+            <div class="form-group ">
+                </br>
+                <select class="form-control shadow " id="exampleFormControlSelect1">
+                  <option>-UBICACION-</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="form-group">
+                </br>
+                <select class="form-control shadow" id="exampleFormControlSelect1">
+                  <option>-PRECIO-</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+            </div>
+    
+        </div>
+        <div class="col-sm">
+            <div class="form-group">
+                </br>
+                <select class="form-control shadow " id="exampleFormControlSelect1">
+                  <option>-ESTADO-</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+            </div>
+        </div>
+        
     </div>
 
+
     <div class="cartas text-center">
-    <div class="card" style="width: 18rem;">
+    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
         <a href="#" class="clase_a">
-            <img src="skins\house_example_3.png" class="card-img-top" alt="...">
+            <img src="skins\house_example_3.png" class="card-img-top d-flex" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Casa</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -97,73 +110,74 @@
         </a>
         
     </div>
-    <div class="card" style="width: 18rem;">
+    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
         <a href="#" class="clase_a">
-            <img src="skins\house_example_3.png" class="card-img-top" alt="...">
+            <img src="images/city-apartment-design-wallpaper-preview.jpg" class="card-img-top " alt="...">
             <div class="card-body">
-                <h5 class="card-title">Casa</h5>
+                <h5 class="card-title">Pent-House</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
         </a>
     </div>
-    <div class="card" style="width: 18rem;">
+    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
         <a href="#" class="clase_a">
-            <img src="skins\house_example_3.png" class="card-img-top" alt="...">
+            <img src="images/Chalet.jpg" class="card-img-top " alt="...">
             <div class="card-body">
-                <h5 class="card-title">Casa</h5>
+                <h5 class="card-title">Chalet</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
         </a>
     </div>
-    <div class="card" style="width: 18rem;">
+    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
         <a href="#" class="clase_a">
-            <img src="skins\house_example_3.png" class="card-img-top" alt="...">
+            <img src="images/Dpto.jpg" class="card-img-top " alt="...">
             <div class="card-body">
-                <h5 class="card-title">Casa</h5>
+                <h5 class="card-title">Departamento</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
         </a>
     </div>
     </div>
+
     <div class="cartas text-center">
-        <div class="card" style="width: 18rem;">
-            <a href="#" class="clase_a">
-                <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Casa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </a>
-            
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href="#" class="clase_a">
-                <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Casa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </a>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href="#" class="clase_a">
-                <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Casa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </a>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href="#" class="clase_a">
-                <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Casa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </a>
-        </div>
-        </div>
+    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+        <a href="#" class="clase_a">
+            <img src="images/casaresidencial.jpeg" class="card-img-top " alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Casa Residencial</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </a>
+        
+    </div>
+    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+        <a href="#" class="clase_a">
+            <img src="images/mono.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Monoambiente</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </a>
+    </div>
+    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+        <a href="#" class="clase_a">
+            <img src="images/dpto6to.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Departamento</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </a>
+    </div>
+    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+        <a href="#" class="clase_a">
+            <img src="images/casar.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Casa Residencial</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </a>
+    </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         
