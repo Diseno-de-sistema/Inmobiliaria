@@ -53,3 +53,22 @@ h5{
     width: 256px;
     height: 202.67px;
 }
+
+footer{
+    background-color: #70c6db;
+
+}
+
+.footer-total{
+    background-color: black;
+}
+
+
+.foot-top{
+    border: 0px;
+    top: 0px;
+    height: 1rem;
+    background: linear-gradient(to right, #2392ae, #afccd3);;
+
+}
+

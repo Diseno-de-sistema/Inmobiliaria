@@ -1,193 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catalogo</title>
 
-        <!--JQUERY-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-        <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <!--JQUERY-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
-        <!-- Los iconos tipo Solid de Fontawesome-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    
-        <!-- Nuestro css-->
-        <link rel="stylesheet" type="text/css" href="LOGIN\static\css\Catalogo_clientes.css">
-</head>
-<body>
-    <nav class="navbar navbar-light  navbar-expand-lg">
+            <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            
+            <!-- Los iconos tipo Solid de Fontawesome-->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+            <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         
-        <a class="navbar-brand ml-3 mt-2 " href="Catalogo_clientes.html">
-            <img src="images\LOGO3.png" width="200" alt="Logo Domus"  id="img-logo">
-        </a>
-        <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <div class="navbar-nav mr-auto ml-auto text-center">
-                <a class="nav-link text-dark ml-3 mr-3" href="#">Propiedades</a>
-                <a class="nav-link text-dark ml-3 mr-3" href="#">Ofrece tu Propiedad</a>
-                <a class="nav-link text-dark ml-3 mr-3" href="#">Contactanos</a>
-                <a class="nav-link text-dark ml-3 mr-3" href="#">Acerca de Nosotros</a>
+            <!-- Nuestro css-->
+            <link rel="stylesheet" type="text/css" href="LOGIN\static\css\Catalogo_clientes.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-light  navbar-expand-lg">
+            
+            <a class="navbar-brand ml-3 mt-2 " href="Catalogo_clientes.html">
+                <img src="images\LOGO3.png" width="200" alt="Logo Domus"  id="img-logo">
+            </a>
+            <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="navbar-nav mr-auto ml-auto text-center">
+                    <a class="nav-link text-dark ml-3 mr-3" href="#">Propiedades</a>
+                    <a class="nav-link text-dark ml-3 mr-3" href="#">Ofrece tu Propiedad</a>
+                    <a class="nav-link text-dark ml-3 mr-3" href="#">Contactanos</a>
+                    <a class="nav-link text-dark ml-3 mr-3" href="#">Acerca de Nosotros</a>
+                    
+                </div>
+            </div> 
+        </nav>
+        <div class="titulos">
+            <h1 id="cat_prop"><b>Catálogo de Propiedades</b></h1><hr class="solid">
+            <h2 id="sub_prop">Encontrá tu proximo lugar para vivir</h2>
+        </div>
+    
+        <div id="options-row" class="row d-flex justify-content-around">
+            <div class="col-sm">
+                <div class="form-group">
+                    </br>
+                    <select class="form-control shadow" id="exampleFormControlSelect1">
+                    <option>-TIPO DE PROPIEDAD-</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
                 
             </div>
-        </div> 
-    </nav>
-    <div class="titulos">
-        <h1 id="cat_prop"><b>Catálogo de Propiedades</b></h1><hr class="solid">
-        <h2 id="sub_prop">Encontrá tu proximo lugar para vivir</h2>
-    </div>
- 
-    <div id="options-row" class="row d-flex justify-content-around">
-        <div class="col-sm">
-            <div class="form-group">
-                </br>
-                <select class="form-control shadow" id="exampleFormControlSelect1">
-                  <option>-TIPO DE PROPIEDAD-</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
+            <div class="col-sm">
+                <div class="form-group ">
+                    </br>
+                    <select class="form-control shadow " id="exampleFormControlSelect1">
+                    <option>-UBICACION-</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    </br>
+                    <select class="form-control shadow" id="exampleFormControlSelect1">
+                    <option>-PRECIO-</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+        
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    </br>
+                    <select class="form-control shadow " id="exampleFormControlSelect1">
+                    <option>-ESTADO-</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
             </div>
             
         </div>
-        <div class="col-sm">
-            <div class="form-group ">
-                </br>
-                <select class="form-control shadow " id="exampleFormControlSelect1">
-                  <option>-UBICACION-</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
+
+
+        <div class="cartas text-center">
+        <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+            <a href="#" class="clase_a">
+                <img src="skins\house_example_3.png" class="card-img-top d-flex" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Casa</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </a>
+            
+        </div>
+        <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+            <a href="#" class="clase_a">
+                <img src="images/city-apartment-design-wallpaper-preview.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pent-House</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+            <a href="#" class="clase_a">
+                <img src="images/Chalet.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chalet</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+            <a href="#" class="clase_a">
+                <img src="images/Dpto.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Departamento</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </a>
+        </div>
+        </div>
+
+        <div class="cartas text-center">
+        <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+            <a href="#" class="clase_a">
+                <img src="images/casaresidencial.jpeg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Casa Residencial</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </a>
+            
+        </div>
+        <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+            <a href="#" class="clase_a">
+                <img src="images/mono.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Monoambiente</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+            <a href="#" class="clase_a">
+                <img src="images/dpto6to.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Departamento</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
+            <a href="#" class="clase_a">
+                <img src="images/casar.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Casa Residencial</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </a>
+        </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+
+
+
+
+
+    </body>
+
+    <footer class="   border-top">
+        <div class="row foot-top"></div>
+        <div class="row mt-3">
+            <div class="col-12 col-md text-center">
+                <img class="ml-3 mb-2" src="images/logo3_2.png" alt="" width="300" >
+                <br>
+            
+                <div class="col-8 ml-auto mr-auto">
+                    <small class="d-block mb-3 text-muted"> Nos comprometemos a materializar el hogar de sus sueños</small>
+                </div>
+                
+                <div>
+                    
+                </div>
+            </div>
+          <div class="col-6 col-md">
+            <h5>Sobre Nosotros</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Métodos de Pago</a></li>
+              <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Términos y Condiciones</a></li>
+              <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Nuestro Equipo</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Contacto</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Contactanos Via Web</a></li>
+              <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">TEL: 3624-665582</a></li>
+              <li class="mb-3">EMAIL:<a class="link-secondary text-decoration-none text-white" href="mailto:info@inmobiliariadomus.com">info@inmobiliariadomus.com </a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Nuestra Direccion</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">French 450</a></li>
+              <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Resistencia, Chaco - Argentina</a></li>
+              <li class="mb-3"> <i class="fab fa-facebook mr-3 ml-3 "></i>
+
+                                <i class="fab fa-instagram mr-3 ml-3"></i>
+
+                                <i class="fab fa-twitter-square mr-3 ml-3"></i>
+
+                                <i class="fab fa-youtube-square mr-3 ml-3"></i>
+                    </li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="row footer-total mt-3 mb-3">
+            <div class="col-md-12 text-center linea1 mt-3 mb-3">
+                <div class="copyright">
+                    <p class="text-light ">© <span>2021</span> <a href="#" class="transition text-white ">Domus Inc.  -  Grupo 3 </a> All rights reserved.</p>
+                </div>
             </div>
         </div>
-        <div class="col-sm">
-            <div class="form-group">
-                </br>
-                <select class="form-control shadow" id="exampleFormControlSelect1">
-                  <option>-PRECIO-</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-            </div>
-    
-        </div>
-        <div class="col-sm">
-            <div class="form-group">
-                </br>
-                <select class="form-control shadow " id="exampleFormControlSelect1">
-                  <option>-ESTADO-</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-            </div>
-        </div>
-        
-    </div>
+    </footer>
 
-
-    <div class="cartas text-center">
-    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="skins\house_example_3.png" class="card-img-top d-flex" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Casa</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-        
-    </div>
-    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="images/city-apartment-design-wallpaper-preview.jpg" class="card-img-top " alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Pent-House</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-    </div>
-    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="images/Chalet.jpg" class="card-img-top " alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Chalet</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-    </div>
-    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="images/Dpto.jpg" class="card-img-top " alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Departamento</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-    </div>
-    </div>
-
-    <div class="cartas text-center">
-    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="images/casaresidencial.jpeg" class="card-img-top " alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Casa Residencial</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-        
-    </div>
-    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="images/mono.jpg" class="card-img-top " alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Monoambiente</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-    </div>
-    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="images/dpto6to.jpg" class="card-img-top " alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Departamento</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-    </div>
-    <div class="card col-lg-3 col-sm-6 mr-4 ml-4" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="images/casar.jpg" class="card-img-top " alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Casa Residencial</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-    </div>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-
-
-
-
-
-</body>
 </html>
