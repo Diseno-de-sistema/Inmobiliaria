@@ -28,9 +28,9 @@ body{
 hr.solid {
     height: 1rem;
     background-color: #70c6db;
-    border-radius: 12%;
-    margin-left: 15%;
-    margin-right: 15%;
+    border-radius: 8%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
  #options-row{
      
@@ -80,6 +80,6 @@ footer{
     border: 0px;
     margin-top: 30rem;
     height: 10rem;
-    background: linear-gradient(to bottom, #38383883, #888888bf , #5a5a5a9c);
+    background: linear-gradient(to bottom, #383838ac, #888888bf , #5a5a5aaf);
 }
 
