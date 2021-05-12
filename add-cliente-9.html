@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Catalogo</title>
+        <title>Añadir Clientes</title>
 
             <!--JQUERY-->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,7 +19,7 @@
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         
             <!-- Nuestro css-->
-            <link rel="stylesheet" type="text/css" href="LOGIN/static/css/AgendarCita.css">
+            <link rel="stylesheet" type="text/css" href="LOGIN/static/css/add-cliente-9.css">
 
 
             <!--Bootstrap 5-->
@@ -46,16 +46,15 @@
             </div> 
         </nav>
         <div class="titulos">
-            <h1 id="cat_prop"><b>Agendar Cita</b></h1><hr class="solid">
+            <h1 id="cat_prop"><b>Añadir Clientes</b></h1><hr class="solid">
             <h2 id="sub_prop">Clientes Nuevos</h2>
         </div>
 
-        <form >
+        <form class="mb-3" >
             <div class="formularios">
                 <div class="cuadros_blancos">
                   <label for="Dni" class="form-label"><b>DNI</b></label>
                   <input type="number" class="form-control" id="Dni" aria-describedby="DniHelp">
-                  <div id="dniHelp" class="form-text"><i>Ingrese el Dni del posible cliente.</b></div>
                 </div>
                 
                 <div class="cuadros_blancos  ">
@@ -74,31 +73,28 @@
                 </div>
 
                 <div class="cuadros_blancos ">
-                    <label for="id_prop" class="form-label"><b>Id-Propiedad</b></label>
+                    <label for="id_prop" class="form-label"><b>CUIL/CUIT</b></label>
                     <input type="number" class="form-control" id="id_prop">
+                </div>
+
+                <div class="cuadros_blancos ">
+                    <label for="id_prop" class="form-label"><b>Fecha de nacimiento</b></label>
+                    <input type="date" class="form-control" id="id_prop">
                 </div>
 
                 <div class="form-group">
                 </br>
                 <select class="form-control shadow" id="exampleFormControlSelect1">
-                <option>AGENTE</option>
-                <option>Angeloff Cesar</option>
-                <option>Amin Fariña</option>
-                <option>Biain Juan Lucas</option>
-                <option>Zapata Rodrigo</option>
+                    <option>Cliente Corporativo</option>
+                    <option>Cliente Particular</option>
                 </select>
                 </div>
-                <button type="submit" class="btn btn-info">AGENDAR CITA</button>
+                <button type="submit" class="btn btn-info">Añadir Cliente</button>
             </div>
             
         </form>
 
-            </div>
-            <iframe src="https://calendar.google.com/calendar/embed?height=800&amp;wkst=1&amp;bgcolor=%232392ae&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=Z3VpZG9nYW1lczk3QGdtYWlsLmNvbQ&amp;src=aDljZWtsOThobnZpOGtuOTV2ZjRpcnFlbjB1bGI4ODFAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%23009688&amp;color=%2333B679&amp;title=Citas&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showNav=1&amp;showDate=1" style="border-width:0" width="1000" height="800" frameborder="0" scrolling="no" class="calendar"></iframe>
-         
-    
-        
-        </div>
+       
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
             
