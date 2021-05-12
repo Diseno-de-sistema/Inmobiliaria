@@ -1,179 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
 
-        <!--JQUERY-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-        <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <!--JQUERY-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
-        <!-- Los iconos tipo Solid de Fontawesome-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    
-        <!-- Nuestro css-->
-        <link rel="stylesheet" type="text/css" href="LOGIN/static/css/homeClientes.css">
-</head>
-<body>
-    <nav class="navbar navbar-light  navbar-expand-lg">
-        
-        <a class="navbar-brand ml-3 mt-2 " href="Catalogo_clientes.html">
-            <img src="images/LOGO3.png" width="200" alt="Logo Domus"  id="img-logo">
-        </a>
-        <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <div class="navbar-nav mr-auto ml-auto text-center">
-                <a class="nav-link text-dark ml-3 mr-3" href="#">Propiedades</a>
-                <a class="nav-link text-dark ml-3 mr-3" href="#">Ofrece tu Propiedad</a>
-                <a class="nav-link text-dark ml-3 mr-3" href="#">Contactanos</a>
-                <a class="nav-link text-dark ml-3 mr-3" href="#">Acerca de Nosotros</a>
-                
-            </div>
-        </div> 
-    </nav>
-    <div class="titulos">
-        <h1 id="cat_prop"><b>Catálogo de Propiedades</b></h1><hr class="solid">
-        <h2 id="sub_prop">Encontra tu proximo lugar para vivir</h2>
-    </div>
-    <div class="filt_botones text-center">
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-          Tipo de Propiedad
-        </button>
-        <ul class="dropdown-menu dropdown-menu-lg-end">
-          <li><button class="dropdown-item" type="button">Action</button></li>
-          <li><button class="dropdown-item" type="button">Another action</button></li>
-          <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-    </div>
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-          Ubicacion        
-        </button>
-        <ul class="dropdown-menu dropdown-menu-lg-end">
-          <li><button class="dropdown-item" type="button">Action</button></li>
-          <li><button class="dropdown-item" type="button">Another action</button></li>
-          <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-    </div>
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-          Precio           
-        </button>
-        <ul class="dropdown-menu dropdown-menu-lg-end">
-          <li><button class="dropdown-item" type="button">Action</button></li>
-          <li><button class="dropdown-item" type="button">Another action</button></li>
-          <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-    </div>
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                Estado           
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="cartas text-center">
-    <div class="card" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Casa</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-        
-    </div>
-    <div class="card" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Casa</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Casa</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <a href="#" class="clase_a">
-            <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Casa</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </a>
-    </div>
-    </div>
-    <div class="cartas text-center">
-        <div class="card" style="width: 18rem;">
-            <a href="#" class="clase_a">
-                <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Casa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </a>
+            <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
             
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href="#" class="clase_a">
-                <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Casa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </a>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href="#" class="clase_a">
-                <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Casa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </a>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <a href="#" class="clase_a">
-                <img src="skins\house_example_3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Casa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </a>
-        </div>
-        </div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <!-- Los iconos tipo Solid de Fontawesome-->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+            <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+            <!-- Nuestro css-->
+            <link rel="stylesheet" type="text/css" href="LOGIN\static\css\homeClientes.css">
+
+
+            <!--Bootstrap 5-->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-light  navbar-expand-lg">
+                
+            <a class="navbar-brand ml-3 mt-2 " href="Catalogo_clientes.html">
+                <img src="images\LOGO3.png" width="300" alt="Logo Domus"  id="img-logo">
+            </a>
+            <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="navbar-nav mr-auto ml-auto text-center">
+                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="#">Propiedades</a>
+                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="#">Ofrece tu Propiedad</a>
+                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="#">Contactanos</a>
+                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="#">Acerca de Nosotros</a>
+                    
+                </div>
+            </div> 
+        </nav>
+        
+        
+        <div class="row slide-promotions">
+            <div class="col-3 col-md">
+                <div class="ml-auto mr-auto">
+                    <h3 class=" mb-3 text-white  font-weight-bold text-center"> Nuestros Socios</h3>
+                    
+                </div>
+                <hr class="solid ">
+                <div class="ml-auto mr-auto">
+                    <h4 class=" mb-3 text-white  font-weight-light text-center"> Nos Avalan</h4>
+                    
+                </div>
+            </div>
+            <div class="col-3 col-md">
+
+            </div>
+            <div class="col-3 col-md">
+
+            </div>
+            <div class="col-3 col-md">
+
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
 
 
 
 
 
-</body>
+    </body>
+
+    <footer class="   border-top">
+        <div class="row foot-top"></div>
+        <div class="row mt-3 ">
+            <div class="col-12 col-md text-center">
+                <img class="ml-3 mb-2" src="images/logo3_2.png" alt="" width="300" >
+                <br>
+            
+                <div class="col-10  ml-auto mr-auto">
+                    <p class=" mb-3 text-white font-italic font-weight-bold text-md"> Nos comprometemos a materializar el hogar de sus sueños</p>
+                    
+                </div>
+                
+                <div>
+                    <i class="fab fa-cc-paypal fa-3x mr-3 ml-3"></i>
+                    <i class="fab fa-cc-visa fa-3x mr-3 ml-3"></i>
+                    <i class="fab fa-cc-mastercard fa-3x mr-3 ml-3"></i>
+                </div>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Sobre Nosotros</h5>
+                <ul class="list-unstyled text-small">
+                <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Métodos de Pago</a></li>
+                <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Términos y Condiciones</a></li>
+                <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Nuestro Equipo</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled text-small">
+                <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Contactanos Via Web</a></li>
+                <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">TEL: 3624-665582</a></li>
+                <li class="mb-3">EMAIL:<a class="link-secondary text-decoration-none text-white" href="mailto:info@inmobiliariadomus.com">info@inmobiliariadomus.com </a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Nuestra Direccion</h5>
+                <ul class="list-unstyled text-small">
+                <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">French 450</a></li>
+                <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Resistencia, Chaco - Argentina</a></li>
+                <li class="mb-3 "> <i class="fab fa-facebook fa-3x  mr-3  "></i>
+
+                                    <i class="fab fa-instagram fa-3x mr-3 ml-1"></i>
+
+                                    <i class="fab fa-twitter-square fa-3x mr-3 ml-1"></i>
+
+                                    <i class="fab fa-youtube-square fa-3x mr-3 ml-1"></i>
+                        </li>
+                
+                </ul>
+            </div>
+        </div>
+        <div class="row footer-total mt-3 mb-3">
+            <div class="col-md-12 text-center linea1 mt-3 mb-3">
+                <div class="copyright">
+                    <p class="text-light ">© <span>2021</span> <a href="#" class="transition text-white ">Domus Inc.  -  Grupo 3 </a>- All rights reserved .-</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </html>
