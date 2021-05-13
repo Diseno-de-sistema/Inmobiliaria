@@ -69,6 +69,7 @@ h5{
 footer{
     background-color: #70c6db;
     margin-top: 5rem;
+    border-color:#123b4600 ;
 
 }
 
@@ -81,7 +82,9 @@ footer{
     border: 0px;
     top: 0px;
     height: 0.6rem;
-    background: linear-gradient(to right, #2392ae, #afccd3);
+    background: linear-gradient(to right, #123b46, #51bcd6);
+    border-color:#123b4600 ;
+
 
 }
 
@@ -98,3 +101,32 @@ footer{
     
 }
 
+hr.linea2 {
+    height: 0.2rem;
+    background-color: #4bc4e2;
+    border-radius: 0.4rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0%;
+    margin-top: 4rem;
+    background: linear-gradient(to right, #4bc4e220,#4bc4e2,#4bc4e2, #4bc4e220);
+}
+
+hr.linea3 {
+height: 0.2rem;
+background-color: #b8d4dc;
+border-radius: 0.4rem;
+margin-left: 10%;
+margin-right: 10%;
+background: linear-gradient(to right, #b8d4dc20,#b8d4dc,#b8d4dc, #b8d4dc20);
+margin-top: 0%;
+margin-bottom: 4rem;
+box-shadow: 3px 3px 10px rgba(213, 213, 213, 0.542);
+}
+
+
+.container-anexo{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
