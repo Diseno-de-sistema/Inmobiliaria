@@ -80,14 +80,16 @@ footer{
 }
 
 .formularios{
-    margin-left: 15%;
-    margin-right: 60%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .calendar{
-    margin-top: 3%;
-    margin-left: 15%;
-    margin-right: 60%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .cuadros_blancos{
     margin-top: 3%;
