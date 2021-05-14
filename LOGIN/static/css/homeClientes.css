@@ -129,5 +129,11 @@ box-shadow: 3px 3px 10px rgba(213, 213, 213, 0.542);
 .container-anexo{
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #676767ad;
 
+}
+
+.text2{
+    text-shadow:  2px 2px 15px #000000;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
 }
