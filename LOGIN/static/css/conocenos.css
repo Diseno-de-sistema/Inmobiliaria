@@ -1,8 +1,6 @@
-
 body{
     background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
-   
 }
 
 .navbar{
@@ -28,11 +26,9 @@ body{
     margin-left: 10%;
 }
 hr.solid {
-    height: 1rem;
-    background-color: #70c6db;
-    border-radius: 0.4rem;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-right: 10%;
+    height: 0.6rem;
+    background: linear-gradient(to right, #2392ae, #041418);
   }
  #options-row{
      
@@ -131,7 +127,7 @@ box-shadow: 3px 3px 10px rgba(213, 213, 213, 0.542);
 .container-anexo{
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #676767ad;
+    background-color: #a5a5a5ad;
 
 }
 
@@ -139,5 +135,10 @@ box-shadow: 3px 3px 10px rgba(213, 213, 213, 0.542);
 }
 
 #casita{
+    border-top-left-radius: 2rem;
+    box-shadow: 14px 20px 20px rgba(0, 0, 0, 0.755);
 }
 
+.fuente{
+    font-size: 1.2rem;
+}
