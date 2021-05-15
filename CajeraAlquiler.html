@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="LOGIN/static/css/Cajera.css">
+
+    <style>
+        .formularios {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light  navbar-expand-lg">
+
+        <a class="navbar-brand ml-3 mt-2 " href="Catalogo_clientes.html">
+            <img src="images/LOGO3.png" width="200" alt="Logo Domus" id="img-logo">
+        </a>
+        <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto ml-auto text-center">
+                <a class="nav-link text-dark ml-3 mr-3" href="#">Registrar Venta</a>
+                <a class="nav-link text-dark ml-3 mr-3" href="CajeraAlquiler.html">Registrar Alquiler</a>
+                <a class="nav-link text-dark ml-3 mr-3" href="#">Ult.Movimientos</a>
+                <a class="nav-link text-dark ml-3 mr-3" href="#">Mov.Historicos</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="titulos">
+        <h1 id="cat_prop"><b>Registrar Alquiler</b></h1>
+        <hr class="solid">
+        <h2 id="sub_prop" class="mb-3">Búsqueda de Cliente</h2>
+    </div>
+
+    <form onsubmit="return false">
+        <div class="container mb-5">
+            <div class="formularios">
+                <label for="Cliente" class="form-label text-light">Código de cliente</label>
+                <input type="number" class="form-control mb-2" id="codCli" required>
+                <button type="submit" class="btn btn-info" id="buscar" onclick="MostrarContenido()">Buscar</button>
+                <button type="reset" class="btn btn-info" onclick="Reiniciar()">Reiniciar</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="">
+        <div class="titulos" style="margin-top: 0%;">
+            <hr class="solid">
+            <h2 id="sub_prop" class="mb-3">Información de la Propiedad</h2>
+        </div>
+
+        <div class="container mb-5">
+            <ul class="text-white formularios" style="list-style-type: none; padding: 0;">
+                <li><h3>Inmueble</h3><p class="d-none d-sm-none d-md-none d-lg-inline" style="font-size: 1.2em;">Casa Residencial moderna</p></li>
+                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">Casa Residencial moderna</div> -->
+                <li>Inquilino<p class="d-none d-sm-none d-md-none d-lg-inline">: ALGO</p></li>
+                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">Prueba</div> -->
+                <li>Propietario<p class="d-none d-sm-none d-md-none d-lg-inline">: Peron</p></li>
+                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">Peron</div> -->
+                <li>Precio del alquiler<p class="d-none d-sm-none d-md-none d-lg-inline">: $123.456</p></li>
+                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">$123.456</div> -->
+                <li>Fecha de pago<p class="d-none d-sm-none d-md-none d-lg-inline">: 03 de junio de 2021</p></li>
+                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">03/06/2021</div> -->
+                <li>Transacción N°<p class="d-none d-sm-none d-md-none d-lg-inline">: 1</p></li>
+                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">1</div> -->
+            </ul>
+        </div>
+
+        <!-- <div class="container mb-5">
+            <div class="row mb-3 bg-white border">
+                <div class="col-md">
+                    Inmueble
+                </div>
+                <div class="col-md">
+                    Inquilino
+                </div>
+                <div class="col-md">
+                    Propietario
+                </div>
+                <div class="col-md">
+                    Precio alquiler
+                </div>
+                <div class="col-md">
+                    Fecha pago
+                </div>
+                <div class="col-1-md">
+                    1
+                </div>
+            </div>
+        </div> -->
+
+        <div class="titulos" style="margin-top: 0%;">
+            <hr class="solid">
+            <h2 id="sub_prop" class="mb-3">Formulario</h2>
+        </div>
+
+        <div class="container">
+            <form onsubmit="return false">
+                <div class="formularios">
+                    <label for="Mes" class="form-label text-light">Mes</label>
+                    <input type="text" class="form-control" required>
+
+                    <label for="Año" class="form-label text-light">Año</label>
+                    <input type="text" class="form-control" required>
+
+                    <label for="Interes" class="form-label text-light">Interes</label>
+                    <input type="text" class="form-control" required>
+
+                    <label for="TotalPago" class="form-label text-light">Total a pagar</label>
+                    <input type="text" class="form-control" required>
+
+                    <label for="FormaPago" class="form-label text-light">Forma de pago</label>
+                    <input type="text" class="form-control mb-2" required>
+
+                    <button type="submit" class="btn btn-info" onsubmit="ConfirmarPago()">Asentar pago</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <script>
+        function MostrarContenido() {
+            if (codCli.value == 1) {
+                let T = document.getElementById("TestsDiv");
+                T.style.display = "block";
+            }
+            else {
+                if (codCli.value !== '') {
+                    alert('El usuario no existe.');
+                }
+            }
+        }
+
+        function Reiniciar() {
+            let R = document.getElementById("TestsDiv");
+            R.style.display = "none";
+        }
+
+        function ConfirmarPago() {
+            alert('Pago registrado');
+        }
+    </script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+        crossorigin="anonymous"></script>
+</body>
