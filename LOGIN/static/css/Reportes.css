@@ -1,3 +1,7 @@
+body{
+    background: url(../../../images/principal.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
 .navbar {
     opacity: 1;
 }
@@ -32,7 +36,7 @@ footer {
 }
 
 .bg-image {
-    background: url(/images/photo-1605146769289-440113cc3d00.jpg) no-repeat center center fixed;
+    background: url(images/photo-1605146769289-440113cc3d00.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
