@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-light navbar-expand-lg ">
         <a class="navbar-brand ml-3 mt-2" href="Catalogo_clientes.html">
             <img src="images/LOGO3.png" width="200" alt="Logo Domus" id="img-logo">
@@ -40,7 +40,7 @@
             </div>
         </div>
     </nav>
-    
+
 
     <main class="bg-image">
         <div class="image-style">
@@ -61,10 +61,10 @@
                         <div class="row g-0 border-top border-bottom border-secondary reportes">
                             <div
                                 class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                 <div class="col-md px-1   border-secondary text-center">
-                                <label for="tipo" class="form-label">Movimiento</label>
-                                <p class="border">#0001</p>
-                            </div>
+                                <div class="col-md px-1   border-secondary text-center">
+                                    <label for="tipo" class="form-label">Movimiento</label>
+                                    <p class="border">#0001</p>
+                                </div>
                             </div>
                             <div class="col-md px-1 border-start border-end border-secondary text-center">
                                 <label for="tipo" class="form-label">Tipo de Movimiento</label>
@@ -79,54 +79,19 @@
                                 <p class="border">$30000</p>
                             </div>
                             <div class="col-md px-1 border-start  border-secondary hide-border text-center">
-                                <button type="button" class="btn" data-toggle="modal"
-                                    data-target="#exampleModalLong">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
-                                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                      </svg>
+                                <button type="button" class="btn" data-bs-target="#exampleModal" data-bs-toggle="modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                        <path
+                                            d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                    </svg>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </form>
 
-                 <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form onsubmit="return false;">
-                    <label for="Fecha" class="form-label">Fecha y hora</label>
-                    <input type="datetime-local" class="form-control mb-2" name="Fecha" id="Fecha" required>
-
-                    <label for="Concepto" class="form-label">Concepto</label>
-                    <input type="text" class="form-control mb-2" name="Concepto" id="Concepto" required>
-
-                    <label for="Monto" class="form-label">Monto</label>
-                    <input type="number" class="form-control mb-2" name="Monto" id="Monto" required>
-
-                    <label for="Movimiento" class="form-label">Movimiento</label>
-                    <select name="Movimiento" class="form-control mb-2" id="Movimiento" required>
-                        <option value="Entrada">Entrada</option>
-                        <option value="Salida">Salida</option>
-                    </select>
-
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-info" data-dismiss="modal">Cargar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
                 <form action="" class="bg-light reportes">
                     <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
@@ -137,10 +102,10 @@
                         <div class="row g-0 border-top border-bottom border-secondary reportes">
                             <div
                                 class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                 <div class="col-md px-1   border-secondary text-center">
-                                <label for="tipo" class="form-label">Movimiento</label>
-                                <p class="border">#0002</p>
-                            </div>
+                                <div class="col-md px-1   border-secondary text-center">
+                                    <label for="tipo" class="form-label">Movimiento</label>
+                                    <p class="border">#0002</p>
+                                </div>
                             </div>
                             <div class="col-md px-1 border-start border-end border-secondary text-center">
                                 <label for="tipo" class="form-label">Tipo de Movimiento</label>
@@ -155,12 +120,14 @@
                                 <p class="border">$15000</p>
                             </div>
                             <div class="col-md px-1 border-start  border-secondary hide-border text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
-                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
                             </div>
-                            
+
                         </div>
                     </div>
                 </form>
@@ -174,10 +141,10 @@
                         <div class="row g-0 border-top border-bottom border-secondary reportes">
                             <div
                                 class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                 <div class="col-md px-1   border-secondary text-center">
-                                <label for="tipo" class="form-label">Movimiento</label>
-                                <p class="border">#0003</p>
-                            </div>
+                                <div class="col-md px-1   border-secondary text-center">
+                                    <label for="tipo" class="form-label">Movimiento</label>
+                                    <p class="border">#0003</p>
+                                </div>
                             </div>
                             <div class="col-md px-1 border-start border-end border-secondary text-center">
                                 <label for="tipo" class="form-label">Tipo de Movimiento</label>
@@ -192,10 +159,12 @@
                                 <p class="border">$15000000</p>
                             </div>
                             <div class="col-md px-1 border-start  border-secondary hide-border text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
-                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -210,10 +179,10 @@
                         <div class="row g-0 border-top border-bottom border-secondary reportes">
                             <div
                                 class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                 <div class="col-md px-1   border-secondary text-center">
-                                <label for="tipo" class="form-label">Movimiento</label>
-                                <p class="border">#0004</p>
-                            </div>
+                                <div class="col-md px-1   border-secondary text-center">
+                                    <label for="tipo" class="form-label">Movimiento</label>
+                                    <p class="border">#0004</p>
+                                </div>
                             </div>
                             <div class="col-md px-1 border-start border-end border-secondary text-center">
                                 <label for="tipo" class="form-label">Tipo de Movimiento</label>
@@ -228,10 +197,12 @@
                                 <p class="border">$20000</p>
                             </div>
                             <div class="col-md px-1 border-start  border-secondary hide-border text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
-                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -246,10 +217,10 @@
                         <div class="row g-0 border-top border-bottom border-secondary reportes">
                             <div
                                 class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                 <div class="col-md px-1   border-secondary text-center">
-                                <label for="tipo" class="form-label">Movimiento</label>
-                                <p class="border">#0005</p>
-                            </div>
+                                <div class="col-md px-1   border-secondary text-center">
+                                    <label for="tipo" class="form-label">Movimiento</label>
+                                    <p class="border">#0005</p>
+                                </div>
                             </div>
                             <div class="col-md px-1 border-start border-end border-secondary text-center">
                                 <label for="tipo" class="form-label">Tipo de Movimiento</label>
@@ -264,10 +235,12 @@
                                 <p class="border">$25000</p>
                             </div>
                             <div class="col-md px-1 border-start  border-secondary hide-border text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
-                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -282,10 +255,10 @@
                         <div class="row g-0 border-top border-bottom border-secondary reportes">
                             <div
                                 class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                 <div class="col-md px-1   border-secondary text-center">
-                                <label for="tipo" class="form-label">Movimiento</label>
-                                <p class="border">#0006</p>
-                            </div>
+                                <div class="col-md px-1   border-secondary text-center">
+                                    <label for="tipo" class="form-label">Movimiento</label>
+                                    <p class="border">#0006</p>
+                                </div>
                             </div>
                             <div class="col-md px-1 border-start border-end border-secondary text-center">
                                 <label for="tipo" class="form-label">Tipo de Movimiento</label>
@@ -300,10 +273,12 @@
                                 <p class="border">$6000000</p>
                             </div>
                             <div class="col-md px-1 border-start  border-secondary hide-border text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
-                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -318,10 +293,10 @@
                         <div class="row g-0 border-top border-bottom border-secondary reportes">
                             <div
                                 class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                 <div class="col-md px-1   border-secondary text-center">
-                                <label for="tipo" class="form-label">Movimiento</label>
-                                <p class="border">#0007</p>
-                            </div>
+                                <div class="col-md px-1   border-secondary text-center">
+                                    <label for="tipo" class="form-label">Movimiento</label>
+                                    <p class="border">#0007</p>
+                                </div>
                             </div>
                             <div class="col-md px-1 border-start border-end border-secondary text-center">
                                 <label for="tipo" class="form-label">Tipo de Movimiento</label>
@@ -336,27 +311,26 @@
                                 <p class="border">$4000000</p>
                             </div>
                             <div class="col-md px-1 border-start  border-secondary hide-border text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
-                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </form>
 
-                
+
                 <form action="" class="bg-light reportes mt-5" id="totales">
-                    
-                   
                     <div class="d-lg-block" id="collapsePropiedades">
                         <div class="row g-0 border-top border-bottom border-secondary reportes">
-                            <div
-                                class="col-md  d-lg-block ps-1 border-start border-secondary reportes">
-                                 <div class="col-md px-1   border-secondary text-center">
-                                <label for="tipo" class="form-label">Total Ingreso</label>
-                                <p class="border">$21065000</p>
-                            </div>
+                            <div class="col-md  d-lg-block ps-1 border-start border-secondary reportes">
+                                <div class="col-md px-1   border-secondary text-center">
+                                    <label for="tipo" class="form-label">Total Ingreso</label>
+                                    <p class="border">$21065000</p>
+                                </div>
                             </div>
                             <div class="col-md px-1 border-start border-end border-secondary text-center">
                                 <label for="tipo" class="form-label">Total Egreso</label>
@@ -366,31 +340,48 @@
                                 <label for="fecha" class="form-label">Total General</label>
                                 <p class="border">$17040000</p>
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                 </form>
-                
-                
-                    <button id="submiteado" type="submit" class="btn btn-info mt-5 ">Imprimir Balance 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
-                            <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
-                            <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
-                          </svg>
+
+                <div>
+                    <button type="submit" class="btn btn-info mt-5" style="float: right;">Imprimir Balance
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-printer-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                            <path
+                                d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                        </svg>
                     </button>
-                
-                   
-
-
-
-
+                </div>
 
                 <div class="container py-5 mt-5"></div>
             </div>
 
-           
+
     </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="border-top">
         <div class="container-fluid">
@@ -468,6 +459,9 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
