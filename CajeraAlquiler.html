@@ -23,9 +23,20 @@
 
     <style>
         .formularios {
-            width: 50%;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @media (min-width: 992px) {
+            .formularios {
+                width: 40%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .formularios {
+                width: 70%;
+            }
         }
     </style>
 </head>
@@ -63,65 +74,57 @@
             <div class="formularios">
                 <label for="Cliente" class="form-label text-light">Código de cliente</label>
                 <input type="number" class="form-control mb-2" id="codCli" required>
-                <button type="submit" class="btn btn-info" id="buscar" onclick="MostrarContenido()">Buscar</button>
+                <button type="submit" class="btn btn-info" onclick="MostrarContenido()">Buscar</button>
                 <button type="reset" class="btn btn-info" onclick="Reiniciar()">Reiniciar</button>
             </div>
         </div>
     </form>
 
-    <div id="">
+    <div id="Mostrar-1" style="display: none;">
         <div class="titulos" style="margin-top: 0%;">
             <hr class="solid">
             <h2 id="sub_prop" class="mb-3">Información de la Propiedad</h2>
         </div>
 
         <div class="container mb-5">
-            <ul class="text-white formularios" style="list-style-type: none; padding: 0;">
-                <li><h3>Inmueble</h3><p class="d-none d-sm-none d-md-none d-lg-inline" style="font-size: 1.2em;">Casa Residencial moderna</p></li>
-                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">Casa Residencial moderna</div> -->
-                <li>Inquilino<p class="d-none d-sm-none d-md-none d-lg-inline">: ALGO</p></li>
-                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">Prueba</div> -->
-                <li>Propietario<p class="d-none d-sm-none d-md-none d-lg-inline">: Peron</p></li>
-                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">Peron</div> -->
-                <li>Precio del alquiler<p class="d-none d-sm-none d-md-none d-lg-inline">: $123.456</p></li>
-                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">$123.456</div> -->
-                <li>Fecha de pago<p class="d-none d-sm-none d-md-none d-lg-inline">: 03 de junio de 2021</p></li>
-                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">03/06/2021</div> -->
-                <li>Transacción N°<p class="d-none d-sm-none d-md-none d-lg-inline">: 1</p></li>
-                <!-- <div class="col-12-md mb-3 d-lg-none d-xl-none">1</div> -->
+            <ul class="bg-white formularios border text-center" style="list-style-type: none; padding: 0;">
+                <li class="border-bottom">
+                    <h3>Inmueble</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">Casa Residencial
+                        moderna</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Inquilino</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">ALGO</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Propietario</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">Peron</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Precio del alquiler</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">
+                        $123.456</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Fecha de pago</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">03 de junio
+                        de 2021</p>
+                </li>
+                <li>
+                    <h3>Transacción N°</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">1</p>
+                </li>
             </ul>
         </div>
 
-        <!-- <div class="container mb-5">
-            <div class="row mb-3 bg-white border">
-                <div class="col-md">
-                    Inmueble
-                </div>
-                <div class="col-md">
-                    Inquilino
-                </div>
-                <div class="col-md">
-                    Propietario
-                </div>
-                <div class="col-md">
-                    Precio alquiler
-                </div>
-                <div class="col-md">
-                    Fecha pago
-                </div>
-                <div class="col-1-md">
-                    1
-                </div>
-            </div>
-        </div> -->
-
         <div class="titulos" style="margin-top: 0%;">
             <hr class="solid">
-            <h2 id="sub_prop" class="mb-3">Formulario</h2>
+            <h2 id="sub_prop" class="mb-3">Registrar pago</h2>
         </div>
 
-        <div class="container">
-            <form onsubmit="return false">
+        <div class="container mb-5">
+            <form onsubmit="ConfirmarPago(); return false;">
                 <div class="formularios">
                     <label for="Mes" class="form-label text-light">Mes</label>
                     <input type="text" class="form-control" required>
@@ -138,17 +141,28 @@
                     <label for="FormaPago" class="form-label text-light">Forma de pago</label>
                     <input type="text" class="form-control mb-2" required>
 
-                    <button type="submit" class="btn btn-info" onsubmit="ConfirmarPago()">Asentar pago</button>
+                    <button id="formulario-2" type="submit" class="btn btn-info">Asentar pago</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- <script>
+    <div id="Mostrar-2" style="display: none;">
+        <div class="titulos" style="margin-top: 0%;">
+            <hr class="solid">
+            <h2 id="sub_prop" class="mb-3">Imprimir recibo</h2>
+        </div>
+
+        <div class="container">
+            <p class="text-white">AGREGAR IMAGEN EJEMPLO RECIBO</p>
+        </div>
+    </div>
+
+    <script>
         function MostrarContenido() {
             if (codCli.value == 1) {
-                let T = document.getElementById("TestsDiv");
-                T.style.display = "block";
+                let M1 = document.getElementById("Mostrar-1");
+                M1.style.display = "block";
             }
             else {
                 if (codCli.value !== '') {
@@ -158,14 +172,20 @@
         }
 
         function Reiniciar() {
-            let R = document.getElementById("TestsDiv");
-            R.style.display = "none";
+            let M1 = document.getElementById("Mostrar-1");
+            M1.style.display = "none";
+
+            let M2 = document.getElementById("Mostrar-2");
+            M2.style.display = "none";
         }
 
         function ConfirmarPago() {
-            alert('Pago registrado');
+            alert('Pago registrado correctamente');
+
+            let M2 = document.getElementById("Mostrar-2");
+            M2.style.display = "block";
         }
-    </script> -->
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
