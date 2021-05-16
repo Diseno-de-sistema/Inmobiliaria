@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cajera_venta</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="LOGIN/static/css/Cajera.css">
+
+    <style>
+        .formularios {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 992px) {
+            .formularios {
+                width: 40%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .formularios {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light  navbar-expand-lg">
+
+        <a class="navbar-brand ml-3 mt-2 " href="Catalogo_clientes.html">
+            <img src="images/LOGO3.png" width="200" alt="Logo Domus" id="img-logo">
+        </a>
+        <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto ml-auto text-center">
+                <a class="nav-link text-dark ml-3 mr-3" href="CajeraVenta.html">Registrar Venta</a>
+                <a class="nav-link text-dark ml-3 mr-3" href="CajeraAlquiler.html">Registrar Alquiler</a>
+                <a class="nav-link text-dark ml-3 mr-3" href="#">Ult.Movimientos</a>
+                <a class="nav-link text-dark ml-3 mr-3" href="#">Mov.Historicos</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="titulos">
+        <h1 id="cat_prop"><b>Registrar Venta</b></h1>
+        <hr class="solid">
+        <h2 id="sub_prop" class="mb-3">Búsqueda de Propiedad</h2>
+    </div>
+
+    <form onsubmit="return false">
+        <div class="container mb-5">
+            <div class="formularios">
+                <label for="Propiedad" class="form-label text-light">Código de propiedad</label>
+                <input type="number" class="form-control mb-2" id="codProp" required>
+                <button type="submit" class="btn btn-info" onclick="MostrarContenido()">Buscar</button>
+                <button type="reset" class="btn btn-info" onclick="Reiniciar()">Reiniciar</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="Mostrar-1" style="display: none;">
+        <div class="titulos" style="margin-top: 0%;">
+            <hr class="solid">
+            <h2 id="sub_prop" class="mb-5">Información de la Propiedad y Propietario</h2>
+        </div>
+
+        <div class="container mb-5">
+            <div class="text-center text-white"><h2>Propiedad</h2></div>
+            <ul class="bg-white formularios border text-center mb-4" style="list-style-type: none; padding: 0;">
+                <li class="border-bottom">
+                    <h3>Código del Inmueble</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">35.206</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Tipo</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">Casa</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Ubicación</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">Resistencia, Chaco -
+                        Argentina</p>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">Av. Italia 205</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Cantidad de</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">
+                        Baños: 2</p>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">
+                        Dormitorios: 4</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Antigüedad</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">2007</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Espacios</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">?</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Artefactos</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">?</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Servicios adheridos</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">?</p>
+                </li>
+                <li>
+                    <h3>Precio del inmueble</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">$4.450.000,00</p>
+                </li>
+            </ul>
+            <div class="text-center text-white"><h2>Propietario</h2></div>
+            <ul class="bg-white formularios border text-center" style="list-style-type: none; padding: 0;">
+                <li class="border-bottom">
+                    <h3>Número de Cliente</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">22.125</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Tipo de Cliente</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">Particular</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Nombre y Apellido</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">Oscar Fernandez</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>DNI</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">
+                        18.698.556</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Teléfono</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">154665585</p>
+                </li>
+                <li class="border-bottom">
+                    <h3>Correo electrónico</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">
+                        oscar_fernandez@hotmail.com</p>
+                </li>
+                <li>
+                    <h3>Dirección</h3>
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">Av. Castelli 403</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="titulos" style="margin-top: 0%;">
+            <hr class="solid">
+            <h2 id="sub_prop" class="mb-3">Registrar pago</h2>
+        </div>
+
+        <div class="container mb-5">
+            <form onsubmit="ConfirmarPago(); return false;">
+                <div class="formularios">
+                    <label for="Tipo" class="form-label text-light">Tipo de venta</label>
+                    <select class="form-control" name="Tipo" id="Tipo" required>
+                        <option value="financiada">Financiada</option>
+                        <option value="total">Total</option>
+                    </select>
+
+                    <label for="Comision" class="form-label text-light">Porcentaje de comisión</label>
+                    <input type="number" class="form-control" required>
+
+                    <label for="Precio" class="form-label text-light">Precio</label>
+                    <input type="text" class="form-control" required>
+
+                    <label for="Moneda" class="form-label text-light">Moneda</label>
+                    <input type="text" class="form-control" required>
+
+                    <label for="FormaPago" class="form-label text-light">Forma de pago</label>
+                    <input type="text" class="form-control mb-2" required>
+
+                    <button id="formulario-2" type="submit" class="btn btn-info">Asentar pago</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="Mostrar-2" style="display: none;">
+        <div class="titulos" style="margin-top: 0%;">
+            <hr class="solid">
+            <h2 id="sub_prop" class="mb-3">Imprimir recibo</h2>
+        </div>
+
+        <div class="container">
+            <p class="text-white">AGREGAR IMAGEN EJEMPLO RECIBO</p>
+        </div>
+    </div>
+
+    <script>
+        function MostrarContenido() {
+            if (codProp.value == 35206) {
+                let M1 = document.getElementById("Mostrar-1");
+                M1.style.display = "block";
+            }
+            else {
+                if (codProp.value !== '') {
+                    alert('La propiedad no existe.');
+                }
+            }
+        }
+
+        function Reiniciar() {
+            let M1 = document.getElementById("Mostrar-1");
+            M1.style.display = "none";
+
+            let M2 = document.getElementById("Mostrar-2");
+            M2.style.display = "none";
+        }
+
+        function ConfirmarPago() {
+            alert('Pago registrado correctamente');
+
+            let M2 = document.getElementById("Mostrar-2");
+            M2.style.display = "block";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+        crossorigin="anonymous"></script>
+</body>
