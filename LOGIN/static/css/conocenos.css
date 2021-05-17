@@ -142,3 +142,19 @@ box-shadow: 3px 3px 10px rgba(213, 213, 213, 0.542);
 .fuente{
     font-size: 1.2rem;
 }
+
+
+
+.enlace-team h1{
+    
+    color:#f0f0f0;
+}
+
+.enlace-team h1 a{
+    text-decoration:none;
+    color:#f0f0f0;
+}
+
+.enlace-team h1 a:hover{
+    color:#70c6db;
+}

@@ -1,7 +1,7 @@
 body{
     background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
-   
+    font-family:'DM Sans', sans-serif
 }
 
 .navbar{
@@ -71,6 +71,7 @@ footer{
     background-color: #70c6db;
     margin-top: 5rem;
     border-color:#123b4600 ;
+    font-family:'DM Sans', sans-serif
 
 }
 
@@ -89,10 +90,13 @@ footer{
 
 }
 
+.button-empleado{
+    margin-top: 30rem;
+}
 
 .slide-promotions{
     border: 0px;
-    margin-top: 30rem;
+    margin-top: 2rem;
     height: 10rem;
     background: linear-gradient(to bottom, #7e7e7eac, #bfbfbfa3 , #7e7e7eac);
 }
@@ -154,4 +158,10 @@ box-shadow: 3px 3px 10px rgba(213, 213, 213, 0.542);
 
 .text-break-all{
     word-break: break-all;
+}
+
+.btn-outline-info{
+    color: white;
+    border-color: white;
+    border-width: 0.2rem;
 }
