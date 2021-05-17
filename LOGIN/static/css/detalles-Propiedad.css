@@ -1,0 +1,69 @@
+body{
+    background: url(../images/principal.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar{
+   opacity: 1; 
+}
+
+.navbar-nav{
+    font-size: 1.5rem;
+}
+    
+h5{
+    color: black;
+}
+
+.cama1{
+    margin-left: 45%;
+}
+
+#descripcion{
+    font-size: medium;
+    margin-right: 3%;
+}
+
+#caracteristicas{
+    margin-left: 4%;
+}
+
+.carac_adentro{
+    margin-left: 10%;
+}
+
+#letra_top_blanca{
+    color: white;
+}
+
+#letra_top_derecha{
+    color: white;
+    text-align-last:right
+}
+
+.direccion{
+    margin-left:1%
+}
+
+#container1{
+    background: white;
+    text-decoration-color: cornsilk;
+    border-radius: 30px;
+}
+
+footer{
+    background-color: #70c6db;
+
+}
+
+.footer-total{
+    background-color: black;
+}
+
+.foot-top{
+    border: 0px;
+    top: 0px;
+    height: 0.6rem;
+    background: linear-gradient(to right, #2392ae, #afccd3);
+
+}
