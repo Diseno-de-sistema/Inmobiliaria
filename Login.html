@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,11 @@
 
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
+
     <!-- Los iconos tipo Solid de Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -22,8 +23,9 @@
     <link rel="stylesheet" type="text/css" href="LOGIN\static\css\Login.css">
 
 </head>
+
 <body>
-    <div class="modal-dialog text-center" >
+    <div class="modal-dialog text-center">
         <div class="col-sm-12 main-section">
             <div class=" modal-content">
                 <div class="col-12 user-img">
@@ -42,9 +44,10 @@
                     <div class="col-12 forgot">
                         <a href="#">¿Olvidaste la contraseña?</a>
                     </div>
-                    <button type="submit" class="btn btn-outline-info"><i class="fas fa-sign-in-alt"></i>  ENTRAR</button>
+                    <button type="submit" class="btn btn-outline-info"><i class="fas fa-sign-in-alt"></i>
+                        ENTRAR</button>
                 </form>
-                
+
             </div>
         </div>
     </div>
@@ -53,10 +56,6 @@
         function checkUser() {
             let user = document.getElementById("user");
 
-            users = ["marketing", "secretaria", "agente", "cajera"];
-            link = ["Marketing.html", "", "", "Cajera.html"]
-
-            
 
             switch (user.value.toLowerCase()) {
                 case "marketing":
@@ -69,18 +68,27 @@
                     window.location.href = "";
                     break;
                 case "cajera":
+                    window.location.href = "Cajera.html";
+                    break;
+                case "administracion":
+                    window.location.href = "JefeAdmin.html";
+                    break;
+                case "comercializacion":
+                    window.location.href = "Comercializar.html";
+                    break;
+                case "admin":
+                    window.location.href = "AdminSitio.html";
+                    break;
+                case "gerente":
                     window.location.href = "";
                     break;
                 default:
                     alert('Usuario inválido.');
                     break;
             }
-
-            // if (user.value.toLowerCase() == "marketing") {
-            //     window.location.href = "Marketing.html";
-            // }
         }
     </script>
-    
+
 </body>
+
 </html>
