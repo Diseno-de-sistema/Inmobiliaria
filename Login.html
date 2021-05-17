@@ -30,10 +30,10 @@
                     <img class="logous" src="images\Portrait_Placeholder.png" alt="EL BETI">
                 </div>
                 <h1>Ingresá a tu cuenta</h1>
-                <form class="col-12">
+                <form class="col-12" onsubmit="checkUser(); return false;">
                     <div class="form-gruop" id="user-gruop">
                         <h2 class="Nombre_Usuario">Nombre de Usuario</h2>
-                        <input type="text" class="form-control"  placeholder="nuñez2021">
+                        <input type="text" class="form-control" id="user" placeholder="nuñez2021">
                     </div>
                     <div class="form-gruop" id="contraseña-gruop">
                         <h2 class="Contraseña">Contraseña</h2>
@@ -48,6 +48,39 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function checkUser() {
+            let user = document.getElementById("user");
+
+            users = ["marketing", "secretaria", "agente", "cajera"];
+            link = ["Marketing.html", "", "", "Cajera.html"]
+
+            
+
+            switch (user.value.toLowerCase()) {
+                case "marketing":
+                    window.location.href = "Marketing.html";
+                    break;
+                case "secretaria":
+                    window.location.href = "";
+                    break;
+                case "agente":
+                    window.location.href = "";
+                    break;
+                case "cajera":
+                    window.location.href = "";
+                    break;
+                default:
+                    alert('Usuario inválido.');
+                    break;
+            }
+
+            // if (user.value.toLowerCase() == "marketing") {
+            //     window.location.href = "Marketing.html";
+            // }
+        }
+    </script>
     
 </body>
 </html>
