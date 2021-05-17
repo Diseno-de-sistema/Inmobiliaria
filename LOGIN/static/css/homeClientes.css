@@ -97,6 +97,24 @@ footer{
     background: linear-gradient(to bottom, #7e7e7eac, #bfbfbfa3 , #7e7e7eac);
 }
 
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+
+.content-iconos{
+    height: 10rem;
+}
+.size-text1{
+    font-size: 2vw
+
+}
+
+.size-text2{
+    font-size: 1vw
+}
+
 .content-container{
     margin-top: 4rem;
 
