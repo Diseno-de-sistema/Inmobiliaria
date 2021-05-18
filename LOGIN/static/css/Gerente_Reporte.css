@@ -1,13 +1,22 @@
 body{
     background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
-}
-.navbar {
-    opacity: 50%;
+    font-family:'DM Sans', sans-serif
 }
 
-.navbar-nav {
-    font-size: 1.5rem;
+.navbar{
+   
+   background-color: #70c6db;
+}
+
+.navbar-nav a{
+    font-size: 1vw;
+}
+
+@media (max-width: 1177px) {
+    .navbar-nav a {
+        font-size: 1rem;
+    }
 }
 
 hr.solid {

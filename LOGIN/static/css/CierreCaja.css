@@ -3,15 +3,22 @@ body{
     background-size: cover;
     font-family:'DM Sans', sans-serif
 }
+
 .navbar{
    
-    background: linear-gradient(to bottom, #f8f8f896, #bfbfbfd3 , #f0f0f0b4);
-    
- }
- 
- .navbar-nav a{
-     font-size: 1vw;
- }
+   background-color: #70c6db;
+}
+
+.navbar-nav a{
+    font-size: 1vw;
+}
+
+@media (max-width: 1177px) {
+    .navbar-nav a {
+        font-size: 1rem;
+    }
+}
+
  
 
 hr.solid {

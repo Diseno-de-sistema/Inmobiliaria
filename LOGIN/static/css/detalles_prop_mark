@@ -87,6 +87,18 @@ footer{
     word-break: break-all;
 }
 
+
+.info-prop{
+    background: white;
+    border-radius: 8%;
+    border-color: #70c6db;
+}
+
+.info-prop .info hr{
+    background:lightgray;
+    
+}
+
 .btn-outline-info{
     color: white;
     border-color: white;
