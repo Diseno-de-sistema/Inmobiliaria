@@ -6,8 +6,8 @@ body{
 
 .navbar{
    
-   background: linear-gradient(to bottom, #f8f8f896, #bfbfbfd3 , #f0f0f0b4);
-   
+   /* background: linear-gradient(to bottom, #f8f8f896, #bfbfbfd3 , #f0f0f0b4); */
+   background-color: #70c6db;
 }
 
 .navbar-nav a{
