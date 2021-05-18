@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/LOGIN/static/css/Reportes.css">
+    <link rel="stylesheet" href="LOGIN/static/css/Reportes.css">
 
     <title>Reportes - Vista</title>
 </head>
@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-light navbar-expand-lg">
             <a class="navbar-brand ml-3 mt-2" href="Catalogo_clientes.html">
-                <img src="/images/LOGO3.png" width="200" alt="Logo Domus" id="img-logo">
+                <img src="images/LOGO3.png" width="200" alt="Logo Domus" id="img-logo">
             </a>
             <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -53,8 +53,20 @@
 
                 <h2 class="fs-6 text-light">VISTA PREVIA DE REPORTE</h2>
 
+                <div>
+                    <button type="submit" class="btn btn-info mt-5" style="float: right;" id="botonzote">Imprimir Balance
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-printer-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                            <path
+                                d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                        </svg>
+                    </button>
+                </div>
+
                 <div class="img-center">
-                    <img src="/images/reporte-prev.jpg" alt="" class="img-fluid">
+                    <img src="images/reporte-prev.jpg" alt="" class="img-fluid">
 
                     <div class="text-light pt-5 fs-3">
                         <span class="text-primary"><</span>
@@ -62,7 +74,9 @@
                         <span class="text-primary">></span>
                     </div>
                 </div>
+                
             </div>
+            
             <div class="container py-5"></div>
         </div>
     </main>
@@ -130,6 +144,7 @@
 
                     </ul>
                 </div>
+                
             </div>
             <div class="row footer-total mt-3">
                 <div class="col-md-12 text-center linea1 mt-3 mb-3">
