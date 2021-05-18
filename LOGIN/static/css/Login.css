@@ -1,6 +1,7 @@
 body{
     background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
+    font-family:'DM Sans', sans-serif
 }
 
 .main-section{
@@ -73,3 +74,39 @@ h1{
     border-radius: 18px;
 }
 
+.navbar{
+    opacity: 1; 
+ }
+ 
+ .navbar-nav{
+     font-size: 1.5rem;
+ }
+
+
+ 
+footer{
+    background-color: #70c6db;
+    margin-top: 5rem;
+    border-color:#123b4600 ;
+    font-family:'DM Sans', sans-serif
+
+}
+
+.footer-total{
+    background-color: black;
+}
+
+
+.foot-top{
+    border: 0px;
+    top: 0px;
+    height: 0.6rem;
+    background: linear-gradient(to right, #123b46, #51bcd6);
+    border-color:#123b4600 ;
+
+
+}
+
+.text-break-all{
+    word-break: break-all;
+}
