@@ -1,16 +1,21 @@
 body{
     background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
-   
+    font-family:'DM Sans', sans-serif
 }
 
 .navbar{
-   opacity: 1; 
+   
+   background: linear-gradient(to bottom, #f8f8f896, #bfbfbfd3 , #f0f0f0b4);
+   
 }
 
 .navbar-nav{
     font-size: 1.5rem;
 }
+
+
+
 
 #cat_prop{
     color: rgb(255, 255, 255);
@@ -71,6 +76,7 @@ footer{
     background-color: #70c6db;
     margin-top: 5rem;
     border-color:#123b4600 ;
+    font-family:'DM Sans', sans-serif
 
 }
 
@@ -89,12 +95,33 @@ footer{
 
 }
 
+.button-empleado{
+    margin-top: 30rem;
+}
 
 .slide-promotions{
     border: 0px;
-    margin-top: 30rem;
+    margin-top: 2rem;
     height: 10rem;
     background: linear-gradient(to bottom, #7e7e7eac, #bfbfbfa3 , #7e7e7eac);
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+
+.content-iconos{
+    height: 10rem;
+}
+.size-text1{
+    font-size: 2vw
+
+}
+
+.size-text2{
+    font-size: 1vw
 }
 
 .content-container{
@@ -136,4 +163,10 @@ box-shadow: 3px 3px 10px rgba(213, 213, 213, 0.542);
 
 .text-break-all{
     word-break: break-all;
+}
+
+.btn-outline-info{
+    color: white;
+    border-color: white;
+    border-width: 0.2rem;
 }

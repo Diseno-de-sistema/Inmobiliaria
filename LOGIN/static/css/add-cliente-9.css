@@ -1,6 +1,7 @@
 body{
     background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
+    font-family:'DM Sans', sans-serif
 }
 
 .navbar{
@@ -57,6 +58,9 @@ h5{
 
 footer{
     background-color: #70c6db;
+    margin-top: 5rem;
+    border-color:#123b4600 ;
+    font-family:'DM Sans', sans-serif
 
 }
 
@@ -69,7 +73,9 @@ footer{
     border: 0px;
     top: 0px;
     height: 0.6rem;
-    background: linear-gradient(to right, #2392ae, #afccd3);
+    background: linear-gradient(to right, #123b46, #51bcd6);
+    border-color:#123b4600 ;
+
 
 }
 .form-label{
@@ -120,4 +126,9 @@ margin: 0;
 }
 #submiteado{
     margin-top: 2%;
+}
+
+
+.text-break-all{
+    word-break: break-all;
 }

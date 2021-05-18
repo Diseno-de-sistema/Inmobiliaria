@@ -3,7 +3,7 @@ body{
     background-size: cover;
 }
 .navbar {
-    opacity: 1;
+    opacity: 50%;
 }
 
 .navbar-nav {
