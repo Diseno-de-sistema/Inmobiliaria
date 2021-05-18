@@ -3,15 +3,16 @@ body{
     background-size: cover;
     font-family:'DM Sans', sans-serif
 }
-
 .navbar{
-   opacity: 1; 
-}
-
-.navbar-nav{
-    font-size: 1.5rem;
-}
-
+   
+    background: linear-gradient(to bottom, #f8f8f896, #bfbfbfd3 , #f0f0f0b4);
+    
+ }
+ 
+ .navbar-nav a{
+     font-size: 1vw;
+ }
+ 
 #cat_prop{
     color: rgb(255, 255, 255);
 }
