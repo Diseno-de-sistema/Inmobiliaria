@@ -8,6 +8,8 @@
 
 body {
   line-height: 1.2;
+  background: url(../../../images/photo-1605146769289-440113cc3d00.jpg) no-repeat center center fixed;
+  background-size: cover;
   font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
@@ -90,6 +92,7 @@ margin: 0px 10px;
   height: 125px;
   border-radius: 25px;
   border: 0.5px solid black;
+  background: #FFFFFF;
 }
 .buscar-caja{
   border-radius: 18px 18px 37.5px 37.5px;
@@ -224,4 +227,40 @@ border-radius: 2px;
 .menu-catalogo-filtro:hover{
   border: none;
   background: transparent;
+}
+
+footer{
+  background-color: #70c6db;
+
+}
+
+.footer-total{
+  background-color: black;
+}
+
+.navbar{
+  opacity: 1; 
+}
+
+.navbar-nav{
+   font-size: 1.5rem;
+}
+
+.titulos{
+  margin-top: 7%;
+  margin-left: 10%;
+}
+hr.solid {
+  margin-right: 67%;
+  height: 0.6rem;
+  background: linear-gradient(to right, #2392ae, #afccd3);
+}
+#cat_prop{
+  color: rgb(255, 255, 255);
+}
+
+#sub_prop{
+  margin-left: 6%;
+  margin-top: 3%;
+  color: rgb(255, 255, 255);
 }
