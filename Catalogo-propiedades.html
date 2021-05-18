@@ -3,12 +3,10 @@
     <head> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-		<title>Histórico de Propiedades</title>
+		<title>Catálogo de Propiedades</title>
         <!--Styles-->
-        <link rel="StyleSheet" href="LOGIN/static/css/historico-propiedades.css" />
-        <!--JavaScript-->
-        <link rel="StyleSheet" href="/historico-propiedades.js" />
-        <!--BootStrap-->
+        <link rel="StyleSheet" href="LOGIN/static/css/catalogo-propiedades.css" />
+        <!--BootStrap 4-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -16,35 +14,43 @@
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <!--Bootstrap 5-->
+            
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+
     </head>
 
 
     <!--Body-->
     <body>
+        <!-- NavBar-->
         <nav class="navbar navbar-light  navbar-expand-lg">
         
             <a class="navbar-brand ml-3 mt-2 " href="Catalogo_clientes.html">
-                <img src="images/LOGO3.png" width="300" alt="Logo Domus"  id="img-logo">
+                <img src="images/LOGO3.png" width="200" alt="Logo Domus"  id="img-logo">
             </a>
             <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <div class="navbar-nav mr-auto ml-auto text-center">
-                    <a class="nav-link text-dark ml-3 mr-3" href="Reportes.html">Generar Reporte</a>
-                    <a class="nav-link text-dark ml-3 mr-3" href="Consultar-cliente.html">Consultar Clientes</a>
-    
-                    <a class="nav-link text-dark ml-3 mr-3" href="Mov.historicos.html">Mov.Historicos</a>
+                    <a class="nav-link text-dark ml-3 mr-3" href="#">Propiedades</a>
+                    <a class="nav-link text-dark ml-3 mr-3" href="#">Añadir Propiedad</a>
+                    <a class="nav-link text-dark ml-3 mr-3" href="#">Agenda</a>
+                    <a class="nav-link text-dark ml-3 mr-3" href="#">Actualizar cita</a>
                     
                 </div>
             </div> 
         </nav>
-        <section id="banner" style="height: 70vh;">
+
+        <!-- Banner -->
+        <section id="banner" style="height: 55vh;">
             <div class="container-fluid">
                 <div class="titulos">
-                    <h1 id="cat_prop"><b>Histórico Propiedades</b></h1>
+                    <h1 id="cat_prop"><b>Catálogo de Propiedades</b></h1>
                     <hr class="solid">
-                    <h2 id="sub_prop" class="mb-3">Listado del archivo historico de propiedades</h2>
+                    <h2 id="sub_prop" class="mb-3">Administracion de viviendas</h2>
 
                 </div>
 
@@ -59,7 +65,7 @@
             </div>    
             
             <!-- Banner  -->
-            <div class="container banner-title" style="margin: 10% auto;">
+            <div class="container banner-title" style="margin: 2% auto;">
                 <div class="row justify-content-center">
                     <!-- GRUPO -->
                     <div id="options-row" class="row d-flex justify-content-center">
@@ -129,7 +135,7 @@
         <section id="productos">
             <div class="container">
                 <div class="row">
-                   <!-- 1° CASA -->
+                   <!-- 1° CASA-->
                     <div class="col-md-12 bloque-producto" style="margin: 1% 0;">
                         <div class="row">
                             
@@ -172,104 +178,22 @@
                                 <div class="col-md-12 row">
                                     <!-- BOTON DEL OJO-->
                                     <div class="col-md-6">
-                                        <!-- Button trigger modal -->
-                                        <a class="btn" data-toggle="modal" data-target="#exampleModal">
+                                        <a class="btn" href="detalles-Propiedad.html">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" style="color: #70C6DB;" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                                 <path
                                                     d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                             </svg>
                                         </a>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <img class="imagen-prod" src="skins/house_example_3.png" alt="imagen-casa" style="margin: 0;">
-                                                <h3 class="modal-title" id="pop-up-informacion" style="margin: 5% 0 0 2%;">Casa Residencial #35206</h3>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Av. Italia 905</p>
-                                                    <p>Piso: -</p>
-                                                    <p>Barrio: A.Mu.Doch</p>
-                                                    <p>Resistencia</p>
-                                                    <p>Chaco</p>
-                                                    <div class="d-flex justify-content-end" style="margin-top: -10%;">
-                                                        <button class="btn btn-success " data-dismiss="modal" >DISPONIBLE</button>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <h4>Informacion Locatario Actual</h4>
-                                                    <p>Nombre Cliente: Oscar</p>
-                                                    <p>Apellido Cliente: Fernandez -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 01/10/2019</p>
-                                                    <p>Fecha de Finalizacion: --</p>
-                                                    <p>Costo de Venta: $4.450.000,00</p>
-                                                    <p>Tipo: VENTA</p>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>
+                        
                                     </div>
-                                    <!-- BOTON DEL PAPEL -->
+                                    <!-- BOTON DEL PINCEL -->
                                     <div class="col-md-6">
-                                            <a href="" class="btn" data-toggle="modal" data-target="#reporte"> 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16" style="color: #70C6DB;">
-                                                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                            <a class="btn" href="editarPropiedad.html"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-brush"  style="color: #70C6DB;" viewBox="0 0 16 16">
+                                                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
                                                 </svg>
                                             </a>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="reporte" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <img class="imagen-prod" src="skins/house_example_3.png" alt="imagen-casa" style="margin: 0;">
-                                                <h3 class="modal-title" id="pop-up-informacion" style="margin: 5% 0 0 2%;">Casa Residencial #35206</h3>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Av. Italia 905</p>
-                                                    <p>Piso: -</p>
-                                                    <p>Barrio: A.Mu.Doch</p>
-                                                    <p>Resistencia</p>
-                                                    <p>Chaco</p>
-                                                    <div class="d-flex justify-content-end" style="margin-top: -10%;">
-                                                        <button class="btn btn-success " data-dismiss="modal" >DISPONIBLE</button>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <h4>Informacion de Locatario</h4>
-                                                    <p>Nombre Cliente: Matias</p>
-                                                    <p>Apellido Cliente: Sanchez -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 15/01/2018</p>
-                                                    <p>Fecha de Finalizacion: 20/09/2019</p>
-                                                    <p>Costo de Venta: $45.000,00</p>
-                                                    <p>Tipo: ALQUILER</p>
-                                                </div>
-
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <p>Nombre Cliente: Julian</p>
-                                                    <p>Apellido Cliente: García -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 01/15/2018</p>
-                                                    <p>Fecha de Finalizacion: 09/01/2018</p>
-                                                    <p>Costo de Venta: $30.000,00</p>
-                                                    <p>Tipo: ALQUILER</p>
-                                                </div>
-
-            
-                                            </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -320,59 +244,20 @@
                                 <div class="col-md-12 row">
                                     <!-- BOTON DEL OJO-->
                                     <div class="col-md-6">
-                                        <!-- Button trigger modal -->
-                                        <a class="btn" data-toggle="modal" data-target="casa35220">
+                                        <a class="btn" href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" style="color: #70C6DB;" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                                 <path
                                                     d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                             </svg>
                                         </a>
-                                        <!-- Modal -->
-                                        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <img class="imagen-prod" src="skins/house_example_3.png" alt="imagen-casa" style="margin: 0;">
-                                                <h3 class="modal-title" id="pop-up-informacion" style="margin: 5% 0 0 2%;">Casa Residencial #35206</h3>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Av. Italia 905</p>
-                                                    <p>Piso: -</p>
-                                                    <p>Barrio: A.Mu.Doch</p>
-                                                    <p>Resistencia</p>
-                                                    <p>Chaco</p>
-                                                    <div class="d-flex justify-content-end" style="margin-top: -10%;">
-                                                        <button class="btn btn-success " data-dismiss="modal" >DISPONIBLE</button>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <h4>Informacion Locatario Actual</h4>
-                                                    <p>Nombre Cliente: Oscar</p>
-                                                    <p>Apellido Cliente: Fernandez -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 01/10/2019</p>
-                                                    <p>Fecha de Finalizacion: --</p>
-                                                    <p>Costo de Venta: $4.450.000,00</p>
-                                                    <p>Tipo: VENTA</p>
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>-->
+                        
                                     </div>
-                                    <!-- BOTON DEL PAPEL -->
+                                    <!-- BOTON DEL PINCEL -->
                                     <div class="col-md-6">
-                                            <a href="" class="btn "> 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16" style="color: #70C6DB;">
-                                                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                            <a class="btn" href=""> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-brush"  style="color: #70C6DB;" viewBox="0 0 16 16">
+                                                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
                                                 </svg>
                                             </a>
                                     </div>
@@ -425,59 +310,20 @@
                                 <div class="col-md-12 row">
                                     <!-- BOTON DEL OJO-->
                                     <div class="col-md-6">
-                                        <!-- Button trigger modal -->
-                                        <a class="btn" data-toggle="modal" data-target="casa35220">
+                                        <a class="btn" href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" style="color: #70C6DB;" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                                 <path
                                                     d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                             </svg>
                                         </a>
-                                        <!-- Modal -->
-                                        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <img class="imagen-prod" src="skins/house_example_3.png" alt="imagen-casa" style="margin: 0;">
-                                                <h3 class="modal-title" id="pop-up-informacion" style="margin: 5% 0 0 2%;">Casa Residencial #35206</h3>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Av. Italia 905</p>
-                                                    <p>Piso: -</p>
-                                                    <p>Barrio: A.Mu.Doch</p>
-                                                    <p>Resistencia</p>
-                                                    <p>Chaco</p>
-                                                    <div class="d-flex justify-content-end" style="margin-top: -10%;">
-                                                        <button class="btn btn-success " data-dismiss="modal" >DISPONIBLE</button>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <h4>Informacion Locatario Actual</h4>
-                                                    <p>Nombre Cliente: Oscar</p>
-                                                    <p>Apellido Cliente: Fernandez -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 01/10/2019</p>
-                                                    <p>Fecha de Finalizacion: --</p>
-                                                    <p>Costo de Venta: $4.450.000,00</p>
-                                                    <p>Tipo: VENTA</p>
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>-->
+                        
                                     </div>
-                                    <!-- BOTON DEL PAPEL -->
+                                    <!-- BOTON DEL PINCEL -->
                                     <div class="col-md-6">
-                                            <a href="" class="btn "> 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16" style="color: #70C6DB;">
-                                                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                            <a class="btn" href=""> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-brush"  style="color: #70C6DB;" viewBox="0 0 16 16">
+                                                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
                                                 </svg>
                                             </a>
                                     </div>
@@ -530,59 +376,20 @@
                                 <div class="col-md-12 row">
                                     <!-- BOTON DEL OJO-->
                                     <div class="col-md-6">
-                                        <!-- Button trigger modal -->
-                                        <a class="btn" data-toggle="modal" data-target="casa35220">
+                                        <a class="btn" href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" style="color: #70C6DB;" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                                 <path
                                                     d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                             </svg>
                                         </a>
-                                        <!-- Modal -->
-                                        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <img class="imagen-prod" src="skins/house_example_3.png" alt="imagen-casa" style="margin: 0;">
-                                                <h3 class="modal-title" id="pop-up-informacion" style="margin: 5% 0 0 2%;">Casa Residencial #35206</h3>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Av. Italia 905</p>
-                                                    <p>Piso: -</p>
-                                                    <p>Barrio: A.Mu.Doch</p>
-                                                    <p>Resistencia</p>
-                                                    <p>Chaco</p>
-                                                    <div class="d-flex justify-content-end" style="margin-top: -10%;">
-                                                        <button class="btn btn-success " data-dismiss="modal" >DISPONIBLE</button>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <h4>Informacion Locatario Actual</h4>
-                                                    <p>Nombre Cliente: Oscar</p>
-                                                    <p>Apellido Cliente: Fernandez -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 01/10/2019</p>
-                                                    <p>Fecha de Finalizacion: --</p>
-                                                    <p>Costo de Venta: $4.450.000,00</p>
-                                                    <p>Tipo: VENTA</p>
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>-->
+                        
                                     </div>
-                                    <!-- BOTON DEL PAPEL -->
+                                    <!-- BOTON DEL PINCEL -->
                                     <div class="col-md-6">
-                                            <a href="" class="btn "> 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16" style="color: #70C6DB;">
-                                                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                            <a class="btn" href=""> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-brush"  style="color: #70C6DB;" viewBox="0 0 16 16">
+                                                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
                                                 </svg>
                                             </a>
                                     </div>
@@ -635,59 +442,20 @@
                                 <div class="col-md-12 row">
                                     <!-- BOTON DEL OJO-->
                                     <div class="col-md-6">
-                                        <!-- Button trigger modal -->
-                                        <a class="btn" data-toggle="modal" data-target="casa35220">
+                                        <a class="btn" href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" style="color: #70C6DB;" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                                 <path
                                                     d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                             </svg>
                                         </a>
-                                        <!-- Modal -->
-                                        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <img class="imagen-prod" src="skins/house_example_3.png" alt="imagen-casa" style="margin: 0;">
-                                                <h3 class="modal-title" id="pop-up-informacion" style="margin: 5% 0 0 2%;">Casa Residencial #35206</h3>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Av. Italia 905</p>
-                                                    <p>Piso: -</p>
-                                                    <p>Barrio: A.Mu.Doch</p>
-                                                    <p>Resistencia</p>
-                                                    <p>Chaco</p>
-                                                    <div class="d-flex justify-content-end" style="margin-top: -10%;">
-                                                        <button class="btn btn-success " data-dismiss="modal" >DISPONIBLE</button>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <h4>Informacion Locatario Actual</h4>
-                                                    <p>Nombre Cliente: Oscar</p>
-                                                    <p>Apellido Cliente: Fernandez -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 01/10/2019</p>
-                                                    <p>Fecha de Finalizacion: --</p>
-                                                    <p>Costo de Venta: $4.450.000,00</p>
-                                                    <p>Tipo: VENTA</p>
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>-->
+                        
                                     </div>
-                                    <!-- BOTON DEL PAPEL -->
+                                    <!-- BOTON DEL PINCEL -->
                                     <div class="col-md-6">
-                                            <a href="" class="btn "> 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16" style="color: #70C6DB;">
-                                                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                            <a class="btn" href=""> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-brush"  style="color: #70C6DB;" viewBox="0 0 16 16">
+                                                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
                                                 </svg>
                                             </a>
                                     </div>
@@ -740,59 +508,20 @@
                                 <div class="col-md-12 row">
                                     <!-- BOTON DEL OJO-->
                                     <div class="col-md-6">
-                                        <!-- Button trigger modal -->
-                                        <a class="btn" data-toggle="modal" data-target="casa35220">
+                                        <a class="btn" href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" style="color: #70C6DB;" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                                 <path
                                                     d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                             </svg>
                                         </a>
-                                        <!-- Modal -->
-                                        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <img class="imagen-prod" src="skins/house_example_3.png" alt="imagen-casa" style="margin: 0;">
-                                                <h3 class="modal-title" id="pop-up-informacion" style="margin: 5% 0 0 2%;">Casa Residencial #35206</h3>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Av. Italia 905</p>
-                                                    <p>Piso: -</p>
-                                                    <p>Barrio: A.Mu.Doch</p>
-                                                    <p>Resistencia</p>
-                                                    <p>Chaco</p>
-                                                    <div class="d-flex justify-content-end" style="margin-top: -10%;">
-                                                        <button class="btn btn-success " data-dismiss="modal" >DISPONIBLE</button>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <h4>Informacion Locatario Actual</h4>
-                                                    <p>Nombre Cliente: Oscar</p>
-                                                    <p>Apellido Cliente: Fernandez -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 01/10/2019</p>
-                                                    <p>Fecha de Finalizacion: --</p>
-                                                    <p>Costo de Venta: $4.450.000,00</p>
-                                                    <p>Tipo: VENTA</p>
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>-->
+                        
                                     </div>
-                                    <!-- BOTON DEL PAPEL -->
+                                    <!-- BOTON DEL PINCEL -->
                                     <div class="col-md-6">
-                                            <a href="" class="btn "> 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16" style="color: #70C6DB;">
-                                                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                            <a class="btn" href=""> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-brush"  style="color: #70C6DB;" viewBox="0 0 16 16">
+                                                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
                                                 </svg>
                                             </a>
                                     </div>
@@ -802,7 +531,7 @@
                         
                     </div>
 
-                    <!-- 7° CASA-->
+                    <!-- 7° CASA -->
                     <div class="col-md-12 bloque-producto" style="margin: 1% 0;">
                         <div class="row">
                             
@@ -845,59 +574,20 @@
                                 <div class="col-md-12 row">
                                     <!-- BOTON DEL OJO-->
                                     <div class="col-md-6">
-                                        <!-- Button trigger modal -->
-                                        <a class="btn" data-toggle="modal" data-target="casa35220">
+                                        <a class="btn" href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" style="color: #70C6DB;" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                                 <path
                                                     d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                             </svg>
                                         </a>
-                                        <!-- Modal -->
-                                        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <img class="imagen-prod" src="skins/house_example_3.png" alt="imagen-casa" style="margin: 0;">
-                                                <h3 class="modal-title" id="pop-up-informacion" style="margin: 5% 0 0 2%;">Casa Residencial #35206</h3>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Av. Italia 905</p>
-                                                    <p>Piso: -</p>
-                                                    <p>Barrio: A.Mu.Doch</p>
-                                                    <p>Resistencia</p>
-                                                    <p>Chaco</p>
-                                                    <div class="d-flex justify-content-end" style="margin-top: -10%;">
-                                                        <button class="btn btn-success " data-dismiss="modal" >DISPONIBLE</button>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <h4>Informacion Locatario Actual</h4>
-                                                    <p>Nombre Cliente: Oscar</p>
-                                                    <p>Apellido Cliente: Fernandez -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 01/10/2019</p>
-                                                    <p>Fecha de Finalizacion: --</p>
-                                                    <p>Costo de Venta: $4.450.000,00</p>
-                                                    <p>Tipo: VENTA</p>
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>-->
+                        
                                     </div>
-                                    <!-- BOTON DEL PAPEL -->
+                                    <!-- BOTON DEL PINCEL -->
                                     <div class="col-md-6">
-                                            <a href="" class="btn "> 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16" style="color: #70C6DB;">
-                                                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                            <a class="btn" href=""> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-brush"  style="color: #70C6DB;" viewBox="0 0 16 16">
+                                                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
                                                 </svg>
                                             </a>
                                     </div>
@@ -950,59 +640,20 @@
                                 <div class="col-md-12 row">
                                     <!-- BOTON DEL OJO-->
                                     <div class="col-md-6">
-                                        <!-- Button trigger modal -->
-                                        <a class="btn" data-toggle="modal" data-target="casa35220">
+                                        <a class="btn" href="">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" style="color: #70C6DB;" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                 <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                                 <path
                                                     d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                             </svg>
                                         </a>
-                                        <!-- Modal -->
-                                        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <img class="imagen-prod" src="skins/house_example_3.png" alt="imagen-casa" style="margin: 0;">
-                                                <h3 class="modal-title" id="pop-up-informacion" style="margin: 5% 0 0 2%;">Casa Residencial #35206</h3>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Av. Italia 905</p>
-                                                    <p>Piso: -</p>
-                                                    <p>Barrio: A.Mu.Doch</p>
-                                                    <p>Resistencia</p>
-                                                    <p>Chaco</p>
-                                                    <div class="d-flex justify-content-end" style="margin-top: -10%;">
-                                                        <button class="btn btn-success " data-dismiss="modal" >DISPONIBLE</button>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body" style="border-top: 1px solid #e9ecef;"> 
-                                                    <h4>Informacion Locatario Actual</h4>
-                                                    <p>Nombre Cliente: Oscar</p>
-                                                    <p>Apellido Cliente: Fernandez -</p>
-                                                    <p>Tipo de Cliente: Propietario</p>
-                                                    <p>Fecha de Inicio: 01/10/2019</p>
-                                                    <p>Fecha de Finalizacion: --</p>
-                                                    <p>Costo de Venta: $4.450.000,00</p>
-                                                    <p>Tipo: VENTA</p>
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>-->
+                        
                                     </div>
-                                    <!-- BOTON DEL PAPEL -->
+                                    <!-- BOTON DEL PINCEL -->
                                     <div class="col-md-6">
-                                            <a href="" class="btn "> 
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16" style="color: #70C6DB;">
-                                                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                            <a class="btn" href=""> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-brush"  style="color: #70C6DB;" viewBox="0 0 16 16">
+                                                    <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
                                                 </svg>
                                             </a>
                                     </div>
@@ -1011,6 +662,7 @@
                         </div>
                         
                     </div>
+
                 </div>
                 <div class="col-md-12 justify-content-center d-flex">
                     <nav aria-label="Page navigation " >

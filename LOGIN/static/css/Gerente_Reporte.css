@@ -1,17 +1,15 @@
 body{
     background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
-    font-family:'DM Sans', sans-serif
 }
-.navbar{
-   
-    background: linear-gradient(to bottom, #f8f8f896, #bfbfbfd3 , #f0f0f0b4);
-    
- }
- 
- .navbar-nav a{
-     font-size: 1vw;
- }
+.navbar {
+    opacity: 50%;
+}
+
+.navbar-nav {
+    font-size: 1.5rem;
+}
+
 hr.solid {
     margin-right: 67%;
     height: 0.6rem;
@@ -67,9 +65,4 @@ footer {
     .reportes {
         border-radius: 20px;
     }
-}
-#botonzote{
-    
-    margin-right: 19%;
-    margin-bottom: 3%;
 }

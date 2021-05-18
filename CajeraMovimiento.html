@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cajera_mov</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="LOGIN/static/css/Cajera.css">
+
+    <style>
+        .formularios {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 992px) {
+            .formularios {
+                width: 40%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .formularios {
+                width: 70%;
+            }
+        }
+
+        @media (min-width:768px) {
+            .hide-border {
+                border-left: 0 !important;
+            }
+        }
+
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light  navbar-expand-lg">
+
+        <a class="navbar-brand ml-3 mt-2 " href="Catalogo_clientes.html">
+            <img src="images/LOGO3.png" width="200" alt="Logo Domus" id="img-logo">
+        </a>
+        <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto ml-auto text-center">
+                <a class="nav-link text-dark ml-3 mr-3" href="#">Registrar Venta</a>
+                <a class="nav-link text-dark ml-3 mr-3" href="CajeraAlquiler.html">Registrar Alquiler</a>
+                <a class="nav-link text-dark ml-3 mr-3" href="#">Ult.Movimientos</a>
+                <a class="nav-link text-dark ml-3 mr-3" href="#">Mov.Historicos</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="titulos">
+        <h1 id="cat_prop"><b>Consultar movimientos de caja</b></h1>
+        <hr class="solid">
+        <h2 id="sub_prop" class="mb-3">Periodo</h2>
+    </div>
+
+    <form onsubmit="mostrarMovimientos(); return false;">
+        <div class="formularios">
+            <label for="fechaInicio" class="form-label text-light">Desde</label>
+            <input type="date" name="fechaInicio" class="form-control mb-3" id="fechaInicio" required>
+
+            <label for="fechaFin" class="form-label text-light">Hasta</label>
+            <input type="date" name="fechaFin" class="form-control mb-3" id="fechaFin" required>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-info">Consultar</button>
+                <button type="reset" class="btn btn-info" onclick="reiniciarDatos();">Reiniciar</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="Mostrar" style="display: none;">
+        <div class="titulos" style="margin-top: 0%;">
+            <hr class="solid">
+            <h2 id="sub_prop" class="mb-3">Movimientos desde <span id="inicio"></span> hasta <span id="fin"></span></h2>
+        </div>
+
+        <div class="container">
+            <div class="mb-2">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
+                    aria-expanded="false" aria-controls="collapsePropiedades" class="btn-info d-lg-none w-100">
+                    <span class="dropdown-toggle">Movimiento #0001</span>
+                </button>
+                <div class="collapse d-lg-block" id="collapsePropiedades">
+                    <div class="row g-0 border-top border-bottom border-secondary reportes bg-light">
+                        <div
+                            class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-left border-secondary reportes">
+                            <div class="col-md px-1   border-secondary text-center">
+                                <label for="tipo" class="form-label">Movimiento</label>
+                                <p class="border">#0001</p>
+                            </div>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary text-center">
+                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
+                            <p class="border">Entrada</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Tipo de Caja</label>
+                            <p class="border">Caja Alquiler</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Valor</label>
+                            <p class="border">$30000</p>
+                        </div>
+                        <div class="col-md px-1 border-left  border-secondary hide-border text-center">
+                            <button type="button" class="btn" data-bs-target="#exampleModal" data-bs-toggle="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
+                    aria-expanded="false" aria-controls="collapsePropiedades" class="btn-info d-lg-none w-100">
+                    <span class="dropdown-toggle">Movimiento #0002</span>
+                </button>
+                <div class="collapse d-lg-block" id="collapsePropiedades">
+                    <div class="row g-0 border-top border-bottom border-secondary reportes bg-light">
+                        <div
+                            class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-left border-secondary reportes">
+                            <div class="col-md px-1   border-secondary text-center">
+                                <label for="tipo" class="form-label">Movimiento</label>
+                                <p class="border">#0002</p>
+                            </div>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary text-center">
+                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
+                            <p class="border">Entrada</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Tipo de Caja</label>
+                            <p class="border">Caja Alquiler</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Valor</label>
+                            <p class="border">$15000</p>
+                        </div>
+                        <div class="col-md px-1 border-left  border-secondary hide-border text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
+                    aria-expanded="false" aria-controls="collapsePropiedades" class="btn-info d-lg-none w-100">
+                    <span class="dropdown-toggle">Movimiento #0003</span>
+                </button>
+                <div class="collapse d-lg-block" id="collapsePropiedades">
+                    <div class="row g-0 border-top border-bottom border-secondary reportes bg-light">
+                        <div
+                            class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-left border-secondary reportes">
+                            <div class="col-md px-1   border-secondary text-center">
+                                <label for="tipo" class="form-label">Movimiento</label>
+                                <p class="border">#0003</p>
+                            </div>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary text-center">
+                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
+                            <p class="border">Entrada</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Tipo de Caja</label>
+                            <p class="border">Caja Venta</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Valor</label>
+                            <p class="border">$15000000</p>
+                        </div>
+                        <div class="col-md px-1 border-left  border-secondary hide-border text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
+                    aria-expanded="false" aria-controls="collapsePropiedades" class="btn-info d-lg-none w-100">
+                    <span class="dropdown-toggle">Movimiento #0004</span>
+                </button>
+                <div class="collapse d-lg-block" id="collapsePropiedades">
+                    <div class="row g-0 border-top border-bottom border-secondary reportes bg-light">
+                        <div
+                            class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-left border-secondary reportes">
+                            <div class="col-md px-1   border-secondary text-center">
+                                <label for="tipo" class="form-label">Movimiento</label>
+                                <p class="border">#0004</p>
+                            </div>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary text-center">
+                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
+                            <p class="border">Entrada</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Tipo de Caja</label>
+                            <p class="border">Caja Alquiler</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Valor</label>
+                            <p class="border">$20000</p>
+                        </div>
+                        <div class="col-md px-1 border-left  border-secondary hide-border text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
+                    aria-expanded="false" aria-controls="collapsePropiedades" class="btn-info d-lg-none w-100">
+                    <span class="dropdown-toggle">Movimiento #0005</span>
+                </button>
+                <div class="collapse d-lg-block" id="collapsePropiedades">
+                    <div class="row g-0 border-top border-bottom border-secondary reportes bg-light">
+                        <div
+                            class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-left border-secondary reportes">
+                            <div class="col-md px-1   border-secondary text-center">
+                                <label for="tipo" class="form-label">Movimiento</label>
+                                <p class="border">#0005</p>
+                            </div>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary text-center">
+                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
+                            <p class="border">Salida</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Tipo de Caja</label>
+                            <p class="border">Caja Alquiler</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Valor</label>
+                            <p class="border">$25000</p>
+                        </div>
+                        <div class="col-md px-1 border-left  border-secondary hide-border text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
+                    aria-expanded="false" aria-controls="collapsePropiedades" class="btn-info d-lg-none w-100">
+                    <span class="dropdown-toggle">Movimiento #0006</span>
+                </button>
+                <div class="collapse d-lg-block" id="collapsePropiedades">
+                    <div class="row g-0 border-top border-bottom border-secondary reportes bg-light">
+                        <div
+                            class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-left border-secondary reportes">
+                            <div class="col-md px-1   border-secondary text-center">
+                                <label for="tipo" class="form-label">Movimiento</label>
+                                <p class="border">#0006</p>
+                            </div>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary text-center">
+                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
+                            <p class="border">Entrada</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Tipo de Caja</label>
+                            <p class="border">Caja Venta</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Valor</label>
+                            <p class="border">$6000000</p>
+                        </div>
+                        <div class="col-md px-1 border-left  border-secondary hide-border text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
+                    aria-expanded="false" aria-controls="collapsePropiedades" class="btn-info d-lg-none w-100">
+                    <span class="dropdown-toggle">Movimiento #0007</span>
+                </button>
+                <div class="collapse d-lg-block" id="collapsePropiedades">
+                    <div class="row g-0 border-top border-bottom border-secondary reportes bg-light">
+                        <div
+                            class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-left border-secondary reportes">
+                            <div class="col-md px-1   border-secondary text-center">
+                                <label for="tipo" class="form-label">Movimiento</label>
+                                <p class="border">#0007</p>
+                            </div>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary text-center">
+                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
+                            <p class="border">Salida</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Tipo de Caja</label>
+                            <p class="border">Caja Venta</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
+                            <label for="fecha" class="form-label">Valor</label>
+                            <p class="border">$4000000</p>
+                        </div>
+                        <div class="col-md px-1 border-left  border-secondary hide-border text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-eye-fill mt-3" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-5"></div>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function mostrarMovimientos() {
+                let mostrarDiv = document.getElementById("Mostrar");
+
+                mostrarDiv.style.display = "block";
+
+                let fechaI = document.getElementById("fechaInicio").value;
+                let fechaF = document.getElementById("fechaFin").value;
+
+                cargarData(fechaI, fechaF);
+            }
+
+            function reiniciarDatos() {
+                let div = document.getElementById("Mostrar");
+
+                div.style.display = "none";
+            }
+
+            function cargarData(fechaI, fechaF) {
+                let dataI = document.getElementById("inicio").innerHTML = fechaI;
+                let dataF = document.getElementById("fin").innerHTML = fechaF;
+            }
+
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+            integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+            integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+            crossorigin="anonymous"></script>
+</body>
