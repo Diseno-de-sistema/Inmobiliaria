@@ -10,8 +10,8 @@ body{
    
 }
 
-.navbar-nav{
-    font-size: 1.5rem;
+.navbar-nav a{
+    font-size: 1vw;
 }
 
 @media (max-width: 1177px) {
@@ -101,7 +101,6 @@ footer{
 
 .slide-promotions{
     border: 0px;
-    margin-top: 35%;
     height: 10rem;
     background: linear-gradient(to bottom, #7e7e7eac, #bfbfbfa3 , #7e7e7eac);
 }

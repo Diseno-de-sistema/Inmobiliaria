@@ -75,13 +75,15 @@ h1{
 }
 
 .navbar{
-    opacity: 1; 
+   
+    background: linear-gradient(to bottom, #f8f8f896, #bfbfbfd3 , #f0f0f0b4);
+    
  }
  
- .navbar-nav{
-     font-size: 1.5rem;
+ .navbar-nav a{
+     font-size: 1vw;
  }
-
+ 
 
  
 footer{
