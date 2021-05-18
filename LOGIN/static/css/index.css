@@ -95,13 +95,10 @@ footer{
 
 }
 
-.button-empleado{
-    margin-top: 30rem;
-}
 
 .slide-promotions{
     border: 0px;
-    margin-top: 2rem;
+    margin-top: 40rem;
     height: 10rem;
     background: linear-gradient(to bottom, #7e7e7eac, #bfbfbfa3 , #7e7e7eac);
 }
