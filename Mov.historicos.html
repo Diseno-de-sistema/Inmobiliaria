@@ -1028,6 +1028,24 @@
             </div>
 
         </section>
+
+        <!-- Script para que muestre los numeros en el listado de precios-->
+        <script>
+            addEventListener('load',inicio,false);
+
+            function inicio()
+            {
+            document.getElementById('precio').addEventListener('change',cambioPrecio,false);
+            }
+
+            function cambioPrecio()
+            {    
+            document.getElementById('pre').innerHTML=document.getElementById('precio').value;
+            }
+        </script>
+    </body>
+
+    <Grid xl='12' lg='12' md='12' sm='12' xs='12'>
         <footer class="   border-top">
             <div class="container-fluid">
                 <div class="row foot-top"></div>
@@ -1095,19 +1113,5 @@
     
             </div>
         </footer>
-        <!-- Script para que muestre los numeros en el listado de precios-->
-        <script>
-            addEventListener('load',inicio,false);
-
-            function inicio()
-            {
-            document.getElementById('precio').addEventListener('change',cambioPrecio,false);
-            }
-
-            function cambioPrecio()
-            {    
-            document.getElementById('pre').innerHTML=document.getElementById('precio').value;
-            }
-        </script>
-    </body>
+    </Grid>
 </html>
