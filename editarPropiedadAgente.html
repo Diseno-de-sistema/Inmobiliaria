@@ -4,21 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Domus-Agente</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   
+  
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <!-- fuentes -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="editarPropiedad.css">
+    <link rel="stylesheet" type="text/css" href="LOGIN/static/css/editarPropiedad.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     
 
 
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg"> 
+        <!-- <div class="container-fluid"> -->
+                
+            <a class="navbar-brand ml-3 mt-2 " href="AgenteInmobiliario.html">
+                <img  src="images\LOGO3.png" width="200" alt="Logo Domus"  id="img-logo">
+            </a>
+            <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="navbar-nav ml-auto align-items-center">
+                    <a class="nav-link text-dark ml-3 mr-3 fw-bold" href="Catalogo-propiedades.html">Propiedades</a>
+                    <a class="nav-link text-dark ml-3 mr-3 fw-bold" href="#">Agenda</a>
+                    <a class="nav-link text-dark ml-3 mr-3 fw-bold" href="#">Añadir Propiedad</a>
+                    <a class="nav-link text-dark ml-3 mr-3 fw-bold" href="#">Actualizar Cita</a>
+                    <a class="nav-link text-dark ml-3 mr-3 fw-bold" href="index.html">Cerrar Sesion</a>
 
-    </header>
+
+                    
+                </div>
+            </div>
+        <!-- </div>   -->
+    </nav>
     <div class="container-fluid">
         <div class="container-fluid">
-            <div "row justify-content-center">
+            <div class="row justify-content-center">
                 <p style="border-bottom: 10px solid transparent; border-image: linear-gradient(to bottom, #ffffffb7 3%, #1c019698 100%) 1;">Editar Propiedad</p>
                     <div class="row-4" style="border-bottom: solid rgb(109, 116, 211) 2px;" >
                         <form class="row row-cols-lg-auto g-3 align-items-center formulario" id="formulario1">
@@ -352,16 +392,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-2">
-                                <img src="/img/casa1.jpg" class="" alt="">
+                                <img src="images/casa1.jpg" class="imagen-add" alt="">
                             </div>
                             <div class="col-md-2">
-                                <img src="/img/casa2.jpg" class="" alt="">
+                                <img src="images/casa5.jpg" class="imagen-add" alt="">
                             </div>
                             <div class="col-md-2">
-                                <img src="/img/casa3.jpg" class="" alt="">
+                                <img src="images/casar.jpg" class="imagen-add" alt="">
                             </div>
                             <div class="col-md-2">
-                                <img src="/img/casa4.jpg" class="" alt="">
+                                <img src="images/casaresidencial.jpeg" class="imagen-add" alt="">
                             </div>
                         </div>
 
@@ -385,10 +425,77 @@
               </div>
         </div>
     </div>
-    <footer>
-
-    </footer>
+    
 </body>
+<Grid xl='12' lg='12' md='12' sm='12' xs='12'>
+    <footer class="   border-top">
+        <div class="container-fluid">
+            <div class="row foot-top"></div>
+        </div>
+        <div class="container-fluid">
+
+            <div class="row mt-3 ">
+                <div class="col-12 col-md text-center">
+                    <img class="ml-3 mb-2 img-fluid" src="images/logo3_2.png" alt="" width="300" >
+                    <br>
+                
+                    <div class="col-10  ml-auto mr-auto">
+                        <p class=" mb-3 text-white font-italic font-weight-bold text-md"> Nos comprometemos a materializar el hogar de sus sueños</p>
+                        
+                    </div>
+                    
+                    <div>
+                        <i class="fab fa-cc-paypal fa-3x mr-3 ml-3"></i>
+                        <i class="fab fa-cc-visa fa-3x mr-3 ml-3"></i>
+                        <i class="fab fa-cc-mastercard fa-3x mr-3 ml-3"></i>
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Sobre Nosotros</h5>
+                    <ul class="list-unstyled text-small">
+                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Métodos de Pago</a></li>
+                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Términos y Condiciones</a></li>
+                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="NuestroTeam.html">Nuestro Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled text-small">
+                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Contactanos Via Web</a></li>
+                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">TEL: 3624-665582</a></li>
+                    <li class="mb-3">EMAIL:<a class="link-secondary text-decoration-none text-white text-break-all" href="mailto:info@inmobiliariadomus.com">info@inmobiliariadomus.com </a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Nuestra Direccion</h5>
+                    <ul class="list-unstyled text-small">
+                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">French 450</a></li>
+                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Resistencia, Chaco - Argentina</a></li>
+                    <li class="mb-3 "> <i class="fab fa-facebook fa-3x  mr-3  "></i>
+
+                                        <i class="fab fa-instagram fa-3x mr-3 ml-1"></i>
+
+                                        <i class="fab fa-twitter-square fa-3x mr-3 ml-1"></i>
+
+                                        <i class="fab fa-youtube-square fa-3x mr-3 ml-1"></i>
+                            </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row footer-total mt-3 mb-3">
+                <div class="col-md-12 text-center linea1 mt-3 mb-3">
+                    <div class="copyright">
+                        <p class="text-light ">© <span>2021</span> <a href="#" class="transition text-white ">Domus Inc.  -  Grupo 3 </a>- All rights reserved .-</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</Grid>
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
     
