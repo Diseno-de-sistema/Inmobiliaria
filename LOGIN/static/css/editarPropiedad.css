@@ -1,8 +1,8 @@
 body{
     background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
-    font-family:'DM Sans', sans-serif
-    font-color
+    font-family:'DM Sans', sans-serif;
+
 }
 
 .navbar{
@@ -16,16 +16,16 @@ body{
 }
 
 .imagen-add{
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 120px;
 }
 
 .editarPropiedad{
-    border-bottom: solid rgb(100, 115, 197) 2px;
+    border-bottom: solid #70c6db 2px;
 }
 
 .formulario1{
-    border-bottom: solid rgb(100, 115, 197) 2px;
+    border-bottom: solid #70c6db 2px;
 }
 
 .formulario{
@@ -38,7 +38,9 @@ body{
 }
 
 
-
+.subtitulo{
+    font-size: 2vw;
+}
 
 @media (max-width: 1177px) {
     .navbar-nav a {
