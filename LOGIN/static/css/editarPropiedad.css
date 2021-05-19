@@ -191,4 +191,7 @@ h5{
         border-width: 0.2rem;
     }
 
-   
+   .blanco{
+       color: white;
+       font-weight: bold;
+   }
