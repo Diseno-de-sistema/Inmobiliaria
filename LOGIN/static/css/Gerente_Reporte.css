@@ -69,7 +69,7 @@ footer{
 
 @media (min-width:768px) {
     .hide-border {
-        border-left: 0 !important;
+        border-bottom: 0 !important;
     }
 }
 
