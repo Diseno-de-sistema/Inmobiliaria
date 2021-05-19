@@ -2,6 +2,7 @@ body{
     background: url(../../../images/principal.jpeg) no-repeat center center fixed;
     background-size: cover;
     font-family:'DM Sans', sans-serif
+    font-color
 }
 
 .navbar{
@@ -189,3 +190,5 @@ h5{
         border-color: white;
         border-width: 0.2rem;
     }
+
+   
