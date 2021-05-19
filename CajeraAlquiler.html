@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria Domus - Cajera</title>
-    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
 
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,7 +22,9 @@
     <!-- Nuestro css-->
     <link rel="stylesheet" type="text/css" href="LOGIN/static/css/CajeraAlquiler.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
     <style>
         .formularios {
@@ -45,30 +47,33 @@
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-light navbar-expand-lg"> 
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg">
         <!-- <div class="container-fluid"> -->
-                
-            <a class="navbar-brand ml-3 mt-2 " href="Cajera.html">
-                <img  src="images\LOGO3.png" width="200" alt="Logo Domus"  id="img-logo">
-            </a>
-            <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <div class="navbar-nav ml-auto align-items-center">
-                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CajeraVenta.html">Registrar Venta</a>
-                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CajeraAlquiler.html">Registrar Alquiler</a>
-                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CierreCaja.html">Cierre de Caja</a>
-                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CajeraMovimiento.html">Ult.Movimientos</a>
-                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CajeraEntradaSalida.html">Registrar Mov.</a>
-                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="index.html">Cerrar Sesion</a>
+
+        <a class="navbar-brand ml-3 mt-2 " href="Cajera.html">
+            <img src="images\LOGO3.png" width="200" alt="Logo Domus" id="img-logo">
+        </a>
+        <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav ml-auto align-items-center">
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CajeraVenta.html">Registrar Venta</a>
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CajeraAlquiler.html">Registrar
+                    Alquiler</a>
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CierreCaja.html">Cierre de Caja</a>
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold"
+                    href="CajeraMovimiento.html">Ult.Movimientos</a>
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CajeraEntradaSalida.html">Registrar
+                    Mov.</a>
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="index.html">Cerrar Sesion</a>
 
 
-                    
-                </div>
+
             </div>
+        </div>
         <!-- </div>   -->
     </nav>
 
@@ -117,7 +122,7 @@
                 </li>
                 <li class="border-bottom">
                     <h3>Fecha de pago</h3>
-                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">03 de junio
+                    <p style="font-size: 1.2em; word-break: break-all; word-wrap: break-word;">03 de mayo
                         de 2021</p>
                 </li>
                 <li>
@@ -136,21 +141,26 @@
             <form onsubmit="ConfirmarPago(); return false;">
                 <div class="formularios">
                     <label for="Mes" class="form-label text-light">Mes</label>
-                    <input type="text" class="form-control" required>
+                    <input type="number" class="form-control" required>
 
                     <label for="Año" class="form-label text-light">Año</label>
-                    <input type="text" class="form-control" required>
+                    <input type="number" class="form-control" required>
 
                     <label for="Interes" class="form-label text-light">Interes</label>
-                    <input type="text" class="form-control" required>
+                    <input type="number" class="form-control" required>
 
                     <label for="TotalPago" class="form-label text-light">Total a pagar</label>
-                    <input type="text" class="form-control" required>
+                    <input type="number" class="form-control" required>
 
                     <label for="FormaPago" class="form-label text-light">Forma de pago</label>
-                    <input type="text" class="form-control mb-2" required>
+                    <select name="FormaPago" class="form-control" id="FormaPago" required>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Tarjeta">Tarjeta</option>
+                    </select>
 
-                    <button id="formulario-2" type="submit" class="btn btn-info">Asentar pago</button>
+                    <div class="text-center mt-3">
+                        <button id="formulario-2" type="submit" class="btn btn-info">Asentar pago</button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -163,7 +173,21 @@
         </div>
 
         <div class="container">
-            <p class="text-white">AGREGAR IMAGEN EJEMPLO RECIBO</p>
+            <div class="text-center">
+                <img src="images/comprobanteAlquiler.png" class="img-fluid" alt="Comprobante alquiler">
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-info" style="float: right;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-printer-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                        <path
+                            d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                    </svg>Imprimir
+                </button>
+            </div>
         </div>
     </div>
 
@@ -216,14 +240,15 @@
 
             <div class="row mt-3 ">
                 <div class="col-12 col-md text-center">
-                    <img class="ml-3 mb-2 img-fluid" src="images/logo3_2.png" alt="" width="300" >
+                    <img class="ml-3 mb-2 img-fluid" src="images/logo3_2.png" alt="" width="300">
                     <br>
-                
+
                     <div class="col-10  ml-auto mr-auto">
-                        <p class=" mb-3 text-white font-italic font-weight-bold text-md"> Nos comprometemos a materializar el hogar de sus sueños</p>
-                        
+                        <p class=" mb-3 text-white font-italic font-weight-bold text-md"> Nos comprometemos a
+                            materializar el hogar de sus sueños</p>
+
                     </div>
-                    
+
                     <div>
                         <i class="fab fa-cc-paypal fa-3x mr-3 ml-3"></i>
                         <i class="fab fa-cc-visa fa-3x mr-3 ml-3"></i>
@@ -233,33 +258,41 @@
                 <div class="col-6 col-md">
                     <h5>Sobre Nosotros</h5>
                     <ul class="list-unstyled text-small">
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Métodos de Pago</a></li>
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Términos y Condiciones</a></li>
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="NuestroTeam.html">Nuestro Equipo</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Métodos de
+                                Pago</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Términos y
+                                Condiciones</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white"
+                                href="NuestroTeam.html">Nuestro Equipo</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled text-small">
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Contactanos Via Web</a></li>
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">TEL: 3624-665582</a></li>
-                    <li class="mb-3">EMAIL:<a class="link-secondary text-decoration-none text-white text-break-all" href="mailto:info@inmobiliariadomus.com">info@inmobiliariadomus.com </a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Contactanos
+                                Via Web</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">TEL:
+                                3624-665582</a></li>
+                        <li class="mb-3">EMAIL:<a class="link-secondary text-decoration-none text-white text-break-all"
+                                href="mailto:info@inmobiliariadomus.com">info@inmobiliariadomus.com </a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5>Nuestra Direccion</h5>
                     <ul class="list-unstyled text-small">
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">French 450</a></li>
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Resistencia, Chaco - Argentina</a></li>
-                    <li class="mb-3 "> <i class="fab fa-facebook fa-3x  mr-3  "></i>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">French
+                                450</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Resistencia,
+                                Chaco - Argentina</a></li>
+                        <li class="mb-3 "> <i class="fab fa-facebook fa-3x  mr-3  "></i>
 
-                                        <i class="fab fa-instagram fa-3x mr-3 ml-1"></i>
+                            <i class="fab fa-instagram fa-3x mr-3 ml-1"></i>
 
-                                        <i class="fab fa-twitter-square fa-3x mr-3 ml-1"></i>
+                            <i class="fab fa-twitter-square fa-3x mr-3 ml-1"></i>
 
-                                        <i class="fab fa-youtube-square fa-3x mr-3 ml-1"></i>
-                            </li>
-                    
+                            <i class="fab fa-youtube-square fa-3x mr-3 ml-1"></i>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -268,7 +301,8 @@
             <div class="row footer-total mt-3">
                 <div class="col-md-12 text-center linea1 mt-3 mb-3">
                     <div class="copyright">
-                        <p class="text-light ">© <span>2021</span> <a href="#" class="transition text-white ">Domus Inc.  -  Grupo 3 </a>- All rights reserved .-</p>
+                        <p class="text-light ">© <span>2021</span> <a href="#" class="transition text-white ">Domus Inc.
+                                - Grupo 3 </a>- All rights reserved .-</p>
                     </div>
                 </div>
             </div>
@@ -276,4 +310,5 @@
         </div>
     </footer>
 </Grid>
+
 </html>
