@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Domus - Jefa Admin</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="LOGIN/static/css/CajeraAlquiler.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .formularios {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 992px) {
+            .formularios {
+                width: 40%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .formularios {
+                width: 70%;
+            }
+        }
+
+        .bordes {
+            border-right: 1px solid black;
+        }
+
+        @media (max-width: 992px) {
+            .margen {
+                margin: 0 !important;
+            }
+
+            .pad {
+                padding: 0 !important;
+                border-bottom: 1px solid black;
+                border-right: 0px solid black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg">
+        <!-- <div class="container-fluid"> -->
+
+        <a class="navbar-brand ml-3 mt-2 " href="JefeAdmin.html">
+            <img src="images\LOGO3.png" width="200" alt="Logo Domus" id="img-logo">
+        </a>
+        <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav ml-auto align-items-center">
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="ReporteTransaccion.html">Generar
+                    Reporte</a>
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="cliente-jefa.html">Consultar Clientes</a>
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="CajeraMovimiento2.html">Consultar
+                    transacciones</a>
+                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="index.html">Cerrar Sesion</a>
+
+            </div>
+        </div>
+        <!-- </div>   -->
+    </nav>
+
+    <div class="titulos">
+        <h1 id="cat_prop"><b>Consultar cliente</b></h1>
+        <hr class="solid">
+        <h2 id="sub_prop" class="mb-3">Búsqueda de Cliente</h2>
+    </div>
+
+    <form onsubmit="return false">
+        <div class="container mb-5">
+            <div class="formularios">
+                <label for="Cliente" class="form-label text-light">Código de cliente</label>
+                <input type="number" class="form-control mb-2" id="codCli" required>
+                <button type="submit" class="btn btn-info" onclick="MostrarContenido()">Buscar</button>
+                <button type="reset" class="btn btn-info" onclick="Reiniciar()">Reiniciar</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="Mostrar-1" style="display: none;">
+        <div class="titulos" style="margin-top: 0%;">
+            <hr class="solid">
+            <h2 id="sub_prop" class="mb-3">Información del cliente</h2>
+        </div>
+
+        <div class="container mb-5">
+            <div class="row bg-white text-center mb-3">
+                <div class="col-lg bordes pad">
+                    <img class="img-fluid" src="images/Portrait_Placeholder.png" alt="imagen-casa" width="50px"
+                        height="50px">
+                    <h5>Cliente #1</h5>
+                </div>
+                <div class="col-lg bordes text-center pad">
+                    <div class="margen mt-4">
+                        <h5>Fernandez, Oscar</h5>
+                    </div>
+                </div>
+                <div class="col-lg bordes pad">
+                    <div class="margen mt-4">
+                        <h5>Propietario</h5>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="margen mt-4">
+                        <a class="btn" data-toggle="modal" data-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                style="color: #70C6DB;" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                <path
+                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                            </svg>
+                        </a>
+    
+                        <a href="" class="btn" data-toggle="modal" data-target="#reporte">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                class="bi bi-file-earmark-text" viewBox="0 0 16 16" style="color: #70C6DB;">
+                                <path
+                                    d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                                <path
+                                    d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-block">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="text-center">
+                        <h3 class="modal-title" id="pop-up-informacion">Cliente #25416</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img class="" src="images/Portrait_Placeholder.png" alt="imagen-casa" style="margin: 0;"
+                            width="60px" height="60px">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Av. Castelli</p>
+                    <p>430</p>
+                    <p>Piso: -</p>
+                    <p>Barrio: Villa Adelante</p>
+                    <p>Resistencia</p>
+                    <p>Chaco</p>
+                </div>
+                <div class="modal-body" style="border-top: 1px solid #e9ecef;">
+                    <h4>Informacion del Cliente</h4>
+                    <p>Nombre Cliente: Oscar</p>
+                    <p>Apellido Cliente: Fernandez -</p>
+                    <p>Tipo de Cliente: Propietario</p>
+                    <p>DNI: 18.698.556</p>
+                    <p>TEL: 15-4665585</p>
+                    <p>EMAIL: oscar_fernandez@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="reporte" tabindex="-1" role="dialog" aria-labelledby="pop-up-informacion"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-block">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="text-center">
+                        <h3 class="modal-title" id="pop-up-informacion">Cliente #25416</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img class="" src="images/Portrait_Placeholder.png" alt="imagen-casa" style="margin: 0;"
+                            width="60px" height="60px">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Av. Castelli</p>
+                    <p>430</p>
+                    <p>Piso: -</p>
+                    <p>Barrio: Villa Adelante</p>
+                    <p>Resistencia</p>
+                    <p>Chaco</p>
+                </div>
+                <div class="modal-body" style="border-top: 1px solid #e9ecef;">
+                    <h4>Propiedades</h4>
+                    <div class="div col-md-12 row">
+                        <div class="col-md-3">
+                            <p>Propiedades</p>
+                        </div>
+                        <div class="div col-md-4">
+                            <p>Av.Hirigoyen 1450</p>
+                        </div>
+                        <div class="div col-md-2">
+                            <p>VENTA</p>
+                        </div>
+                        <div class="div col-md-3">
+                            <p>Locatario</p>
+                        </div>
+                    </div>
+                    <div class="div col-md-12 row">
+                        <div class="col-md-3">
+                            <p>#32455</p>
+                        </div>
+                        <div class="div col-md-4">
+                            <p>Fecha Venta: 15/05/2019</p>
+                        </div>
+                        <div class="div col-md-2">
+                            <p>Precio</p>
+                        </div>
+                        <div class="div col-md-3">
+                            <p>$2.560.000,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body" style="border-top: 1px solid #e9ecef;">
+                    <div class="div col-md-12 row">
+                        <div class="col-md-3">
+                            <p>Propiedades</p>
+                        </div>
+                        <div class="div col-md-4">
+                            <p>French 144</p>
+                        </div>
+                        <div class="div col-md-2">
+                            <p>VENTA</p>
+                        </div>
+                        <div class="div col-md-3">
+                            <p>Locatario</p>
+                        </div>
+                    </div>
+                    <div class="div col-md-12 row">
+                        <div class="col-md-3">
+                            <p>#30644</p>
+                        </div>
+                        <div class="div col-md-4">
+                            <p>Fecha Venta: 12/11/2018</p>
+                        </div>
+                        <div class="div col-md-2">
+                            <p>Precio</p>
+                        </div>
+                        <div class="div col-md-3">
+                            <p>$1.250.000,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body" style="border-top: 1px solid #e9ecef;">
+                    <div class="div col-md-12 row">
+                        <div class="col-md-3">
+                            <p>Propiedades</p>
+                        </div>
+                        <div class="div col-md-4">
+                            <p>López y Planes 210</p>
+                        </div>
+                        <div class="div col-md-2">
+                            <p>ALQUILER</p>
+                        </div>
+                        <div class="div col-md-3">
+                            <p>Locatario</p>
+                        </div>
+                    </div>
+                    <div class="div col-md-12 row">
+                        <div class="col-md-3">
+                            <p>#30120</p>
+                        </div>
+                        <div class="div col-md-4">
+                            <p>Fecha Alquiler: 29/02/2018</p>
+                        </div>
+                        <div class="div col-md-2">
+                            <p>Precio</p>
+                        </div>
+                        <div class="div col-md-3">
+                            <p>$35.000,00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function MostrarContenido() {
+            if (codCli.value == 1) {
+                let M1 = document.getElementById("Mostrar-1");
+                M1.style.display = "block";
+            }
+            else {
+                if (codCli.value !== '') {
+                    alert('No se encontraron resultados.');
+                }
+            }
+        }
+
+        function Reiniciar() {
+            let M1 = document.getElementById("Mostrar-1");
+            M1.style.display = "none";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+        crossorigin="anonymous"></script>
+</body>
+<Grid xl='12' lg='12' md='12' sm='12' xs='12'>
+    <footer class="   border-top">
+        <div class="container-fluid">
+            <div class="row foot-top"></div>
+        </div>
+        <div class="container-fluid">
+
+            <div class="row mt-3 ">
+                <div class="col-12 col-md text-center">
+                    <img class="ml-3 mb-2 img-fluid" src="images/logo3_2.png" alt="" width="300">
+                    <br>
+
+                    <div class="col-10  ml-auto mr-auto">
+                        <p class=" mb-3 text-white font-italic font-weight-bold text-md"> Nos comprometemos a
+                            materializar el hogar de sus sueños</p>
+
+                    </div>
+
+                    <div>
+                        <i class="fab fa-cc-paypal fa-3x mr-3 ml-3"></i>
+                        <i class="fab fa-cc-visa fa-3x mr-3 ml-3"></i>
+                        <i class="fab fa-cc-mastercard fa-3x mr-3 ml-3"></i>
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Sobre Nosotros</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Métodos de
+                                Pago</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Términos y
+                                Condiciones</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white"
+                                href="NuestroTeam.html">Nuestro Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Contactanos
+                                Via Web</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">TEL:
+                                3624-665582</a></li>
+                        <li class="mb-3">EMAIL:<a class="link-secondary text-decoration-none text-white text-break-all"
+                                href="mailto:info@inmobiliariadomus.com">info@inmobiliariadomus.com </a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Nuestra Direccion</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">French
+                                450</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Resistencia,
+                                Chaco - Argentina</a></li>
+                        <li class="mb-3 "> <i class="fab fa-facebook fa-3x  mr-3  "></i>
+
+                            <i class="fab fa-instagram fa-3x mr-3 ml-1"></i>
+
+                            <i class="fab fa-twitter-square fa-3x mr-3 ml-1"></i>
+
+                            <i class="fab fa-youtube-square fa-3x mr-3 ml-1"></i>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row footer-total mt-3 mb-3">
+                <div class="col-md-12 text-center linea1 mt-3 mb-3">
+                    <div class="copyright">
+                        <p class="text-light ">© <span>2021</span> <a href="#" class="transition text-white ">Domus Inc.
+                                - Grupo 3 </a>- All rights reserved .-</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</Grid>
+
+</html>
