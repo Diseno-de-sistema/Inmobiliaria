@@ -62,16 +62,6 @@ footer{
     word-break: break-all;
 }
 
-
-.bg-image {
-    background: url(images/photo-1605146769289-440113cc3d00.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-.image-style {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
 @media (min-width:768px) {
     .hide-border {
         border-left: 0 !important;

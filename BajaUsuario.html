@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta de usuario</title>
+    <title>Inmobiliaria Domus - Admin</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
 
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -61,11 +62,11 @@
     </nav>
 
     <div class="titulos">
-        <h1 id="cat_prop"><b>Alta de usuario</b></h1>
+        <h1 id="cat_prop"><b>Baja de usuario</b></h1>
         <hr class="solid">
     </div>
 
-    <form onsubmit="confirmarUsuario(); return false;">
+    <form onsubmit="confirmarUsuario(); return false;" class="my-5">
         <div class="formularios">
             <label for="usuario" class="form-label text-light">Nombre de usuario</label>
             <input type="text" name="usuario" class="form-control mb-3" id="usuario" required>
@@ -77,9 +78,19 @@
         </div>
     </form>
 
+    <div class="container my-5">
+    </div>
+
     <script>
         function confirmarUsuario() {
-            alert('Usuario borrado correctamente');
+            let user = document.getElementById("usuario");
+
+            if (user.value == "cajera"){
+                alert('Usuario borrado correctamente');
+            }
+            else {
+                alert('No existe el usuario.');
+            }   
         }
     </script>
 
