@@ -15,9 +15,10 @@ body{
 }
 
 .imagen-add{
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 120px;
 }
+
 
 .editarPropiedad{
     border-bottom: solid rgb(100, 115, 197) 2px;
