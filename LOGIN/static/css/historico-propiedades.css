@@ -307,3 +307,19 @@ footer{
   border-color: white;
   border-width: 0.2rem;
 }
+
+.bordes {
+  border-right: 1px solid black;
+}
+
+@media (max-width: 992px) {
+  .margen {
+    margin: 0 !important;
+  }
+
+  .pad {
+    padding: 0 !important;
+    border-bottom: 1px solid black;
+    border-right: 0px solid black;
+  }
+}
