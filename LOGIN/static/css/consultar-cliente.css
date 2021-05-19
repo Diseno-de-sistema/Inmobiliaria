@@ -1,20 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
-@font-face {
-  font-family: 'futura-bold';
-  src: url("../fonts/Futura-Bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; 
+body{
+  background: url(../../../images/principal.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  font-family:'DM Sans', sans-serif;
 }
 
-body {
-  line-height: 1.2;
-  background: url(../../../images/Howdorealestateagentsgetpaid-571bd00c3df78c564045853d.jpg) no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'DM Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 15px;
-  color: #5c5c77; 
-}
 
 p, .paragraph {
   font-weight: 400;
@@ -35,6 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar{
  
  background-color: #70c6db;
+ font-family:'DM Sans', sans-serif;
+
 }
 
 .navbar-nav a{
@@ -295,6 +286,7 @@ footer{
 .titulos{
   margin-top: 7%;
   margin-left: 10%;
+  font-family:'DM Sans', sans-serif;
 }
 hr.solid {
   margin-right: 67%;

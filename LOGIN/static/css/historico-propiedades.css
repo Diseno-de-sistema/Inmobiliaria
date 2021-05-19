@@ -1,21 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
-@font-face {
-  font-family: 'futura-bold';
-  src: url("../fonts/Futura-Bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; 
-}
 
-body {
-  line-height: 1.2;
-  background: url(../../../images/photo-1605146769289-440113cc3d00.jpg) no-repeat center center fixed;
+
+body{
+  background: url(../../../images/principal.jpeg) no-repeat center center fixed;
   background-size: cover;
-  font-family: 'DM Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 15px;
-  color: #5c5c77; 
+  font-family:'DM Sans', sans-serif
 }
-
 p, .paragraph {
   font-weight: 400;
   color: #5c5c77;
@@ -33,18 +22,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .navbar{
- 
- background-color: #70c6db;
+   
+  background-color: #70c6db;
+  font-family:'DM Sans', sans-serif;
+
 }
 
 .navbar-nav a{
-  font-size: 1vw;
+   font-size: 1vw;
 }
 
 @media (max-width: 1177px) {
-  .navbar-nav a {
-      font-size: 1rem;
-  }
+   .navbar-nav a {
+       font-size: 1rem;
+   }
 }
 
 
@@ -257,18 +248,11 @@ footer{
   background-color: black;
 }
 
-.navbar{
-   
-  background: linear-gradient(to bottom, #f8f8f896, #bfbfbfd3 , #f0f0f0b4);
-}
-.navbar-nav a{
-   font-size: 1vw;
-}
-
 
 .titulos{
   margin-top: 7%;
   margin-left: 10%;
+  font-family:'DM Sans', sans-serif;
 }
 hr.solid {
   margin-right: 67%;

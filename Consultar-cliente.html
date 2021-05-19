@@ -3,7 +3,8 @@
     <head> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-		<title>Consultar Cliente</title>
+        <title>Inmobiliaria Domus - Jefa Admin</title>
+        <link rel="icon" type="image/png" href="images/favicon.ico"/>
         <!--Styles-->
         <link rel="StyleSheet" href="LOGIN/static/css/consultar-cliente.css" />
         <!--JavaScript-->
@@ -21,49 +22,46 @@
 
     <!--Body-->
     <body>
-        <nav class="navbar navbar-light  navbar-expand-lg">
-        
-            <a class="navbar-brand ml-3 mt-2 " href="Catalogo_clientes.html">
-                <img src="images/LOGO3.png" width="300" alt="Logo Domus"  id="img-logo">
-            </a>
-            <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <div class="navbar-nav mr-auto ml-auto text-center">
-                    <a class="nav-link text-dark ml-3 mr-3" href="Reportes.html">Generar Reporte</a>
-                    <a class="nav-link text-dark ml-3 mr-3" href="Consultar-cliente.html">Consultar Clientes</a>
-    
-                    <a class="nav-link text-dark ml-3 mr-3" href="Mov.historicos.html">Mov.Historicos</a>
+        <nav class="navbar sticky-top navbar-light navbar-expand-lg"> 
+            <!-- <div class="container-fluid"> -->
                     
+                <a class="navbar-brand ml-3 mt-2 " href="JefeAdmin.html">
+                    <img  src="images\LOGO3.png" width="200" alt="Logo Domus"  id="img-logo">
+                </a>
+                <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="navbar-nav ml-auto align-items-center">
+                        <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="Reportes.html">Generar Reporte</a>
+                        <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="Consultar-cliente.html">Consultar Clientes</a>
+                        <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="Mov.historicos.html">Mov. Historicos</a>
+                        <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="index.html">Cerrar Sesion</a>
+    
+                    </div>
                 </div>
-            </div> 
+            <!-- </div>   -->
         </nav>
         <section id="banner" style="height: 70vh;">
             <div class="container-fluid">
                 <div class="titulos">
-                    <h1 id="cat_prop"><b>Histórico de Clientes</b></h1>
+                    <h1 class=" text-white" id="cat_prop"><b>Histórico de Clientes</b></h1>
                     <hr class="solid">
-                    <h2 id="sub_prop" class="mb-3">Listado del archivo historico de nuestros clientes</h2>
+                    <h2 class=" text-white" id="sub_prop" class="mb-3">Listado del archivo historico de nuestros clientes</h2>
 
                 </div>
+     
 
-                <div class="titulos d-flex" style="margin-left: 60%">
-                    <div id="cat_prop">
-                        <input  type="text"  placeholder="Ingresá algun dato del cliente, dni, nombre..." style="padding: 0 10px; font-size: 1rem; width: 440px; height: 38px;">
-                    </div>                    
-                    <a href="/" class="btn btn-info" style="margin: 0 0 0 2%">Buscar</a>
-                </div>
-            
-
-            </div>    
+            </div>       
             
             <!-- Banner  -->
             <div class="container banner-title" style="margin: 10% auto;">
                 <div class="row justify-content-center">
                     <!-- GRUPO -->
                     <div id="options-row" class="row d-flex justify-content-center">
-                        <div class="col-sm">
+                        <div class="col-lg">
                             <div class="form-group">
                                 </br>
                                 <select class="form-control shadow" id="exampleFormControlSelect1">
@@ -74,7 +72,7 @@
                             </div>
                             
                         </div>
-                        <div class="col-sm">
+                        <div class="col-lg">
                             <div class="form-group ">
                                 </br>
                                 <select class="form-control shadow " id="exampleFormControlSelect1">
