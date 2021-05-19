@@ -55,7 +55,7 @@
     <div class="container-fluid">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <p class="subtitulo font-weight-bold text-light" style="border-bottom: 10px solid transparent; border-image: linear-gradient(to right, #2392ae, #041418) 1; ">Editar Propiedad</p>                    <div class="row-4" style="border-bottom: solid #70c6db 2px;" >
+                <p class="subtitulo font-weight-bold text-light" style="border-bottom: 10px solid transparent; border-image: linear-gradient(to right, #2392ae, #041418) 1; ">Editar Propiedad</p>                    <div class="row-4 blanco" style="border-bottom: solid #70c6db 2px;" >
                         <form class="row row-cols-lg-auto g-3 align-items-center formulario" id="formulario1">
                             <div class="col-12">
                                 <label class="" for="inlineFormInputGroupUsername">Nombre de Propiedad</label>
@@ -88,7 +88,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="row-4" style="border-bottom: solid #70c6db 2px;">
+                    <div class="row-4 blanco" style="border-bottom: solid #70c6db 2px;">
                         <form class="row row-cols-lg-auto g-3 align-items-center formulario">
                             <div class="col-12">
                                 <label class="" for="inlineFormInputGroupUsername">Tipo</label>
@@ -220,79 +220,83 @@
             </div>
         </div>
         <div class="container-fluid" id="menuMedio" style="border-bottom: solid #70c6db 2px;">
-            <div class="row">
-                <div class="col">
-                    <form class="row row-cols-lg-auto g-3 align-items-center formulario">
-                        <div class="mb-4">
+            <div class="row blanco">
+                <div class="col-4">
+                    <form class="row  g-3 align-items-center formulario">
+                        <div class="mb-4 blanco">
                             <p> Muebles Incluidos</p>
                             
                             <div class="form-check form-switch mb-2" >
-                                <input class="form-check-label col-4" for="flexSwitchCheckDefault" id="caja" ></input>
-                                <label class="col-auto" for="inlineFormInputGroupUsername">Camas</label>
-                                <input class="form-check-input col-2" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-input col-4  " type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-label col-2" for="flexSwitchCheckDefault" id="caja" ></input>
+                                <label class="col-4 " for="inlineFormInputGroupUsername">Camas</label>
                             </div>
                             <div class="form-check form-switch mb-2">
-                                <input class="form-check-label col-4" for="flexSwitchCheckDefault"></input>
-                                <label class="col-auto" for="inlineFormInputGroupUsername">Sofa</label>
-                                <input class="form-check-input col-2" type="checkbox" id="flexSwitchCheckDefault">
+                                <input class="form-check-input col-4   " type="checkbox" id="flexSwitchCheckDefault">
+                                <input class="form-check-label col-2" for="flexSwitchCheckDefault"></input>
+                                <label class="col-4" for="inlineFormInputGroupUsername">Sofa</label>
                             </div>
                             <div class="form-check form-switch mb-2">
-                                <input class="form-check-label col-4" for="flexSwitchCheckDefault"></input>
-                                <label class="col-auto" for="inlineFormInputGroupUsername col-2">Mesa</label>
-                                <input class="form-check-input col-2" type="checkbox" id="flexSwitchCheckDefault">
+                                <input class="form-check-input col-4   " type="checkbox" id="flexSwitchCheckDefault">
+                                <input class="form-check-label col-2" for="flexSwitchCheckDefault"></input>
+                                <label class="col-4" for="inlineFormInputGroupUsername col-2">Mesa</label>
                             </div>
                             <div class="form-check form-switch mb-2">
-                                <input class="form-check-label col-4" for="flexSwitchCheckDefault"></input>
-                                <label class="col-auto" for="inlineFormInputGroupUsername">Ropero</label>
-                                <input class="form-check-input col-2" type="checkbox" id="flexSwitchCheckDefault">
+                                <input class="form-check-input col-4     " type="checkbox" id="flexSwitchCheckDefault">
+                                <input class="form-check-label col-2" for="flexSwitchCheckDefault"></input>
+                                <label class="col-4" for="inlineFormInputGroupUsername">Ropero</label>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="col">
-                    <form class="row row-cols-lg-auto g-3 align-items-center formulario">
-                        <div class="mb-4">
+                <div class="col-4">
+                    <form class="row  g-3 align-items-center formulario">
+                        <div class="mb-4 blanco">
                             <p> Electrodomesticos </p>
                             
                             <div class="form-check form-switch mb-2" >
-                                <label class="col-auto" for="inlineFormInputGroupUsername">Aire Acondicionado</label>
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-input col-4 mr-auto" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <label class="col-8 " for="inlineFormInputGroupUsername">Aire Acondicionado</label>
+                               
                             </div>
                             <div class="form-check form-switch mb-2">
-                                <label class="col-auto" for="inlineFormInputGroupUsername">Heladera </label>
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-input col-4 mr-auto" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <label class="col-8" for="inlineFormInputGroupUsername">Heladera </label>
+                                
                             </div>
                             <div class="form-check form-switch mb-2">
-                                <label class="col-auto" for="inlineFormInputGroupUsername"> Microondas</label>
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-input col-4 mr-auto" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <label class="col-8" for="inlineFormInputGroupUsername"> Microondas</label>
+                                
                             </div>
                             <div class="form-check form-switch mb-2">
-                                <label class="col-auto" for="inlineFormInputGroupUsername"> Lavarropa</label>
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-input col-4 mr-auto" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <label class="col-8" for="inlineFormInputGroupUsername"> Lavarropa</label>
+                                
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="col">
-                    <form class="row row-cols-lg-auto g-3 align-items-center formulario">
-                        <div class="mb-3">
+                <div class="col-4">
+                    <form class="row  g-3 align-items-center formulario">
+                        <div class="mb-3 blanco">
                             <p> Servicios Adheridos </p>
                             
                             <div class="form-check form-switch mb-2" >
-                                <label class="col-auto" for="inlineFormInputGroupUsername"> Limpieza</label>
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-input col-4 " type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <label class="col-8" for="inlineFormInputGroupUsername"> Limpieza</label>
                             </div>
                             <div class="form-check form-switch mb-2">
-                                <label class="col-auto" for="inlineFormInputGroupUsername">Luz </label>
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-input col-4  " type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <label class="col-8" for="inlineFormInputGroupUsername">Luz </label>
                             </div>
                             <div class="form-check form-switch mb-2">
-                                <label class="col-auto" for="inlineFormInputGroupUsername"> Agua</label>
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-input col-4 " type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <label class="col-8" for="inlineFormInputGroupUsername"> Agua</label>
                             </div>
                             <div class="form-check form-switch mb-2">
-                                <label class="col-auto" for="inlineFormInputGroupUsername"> Internet</label>
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <input class="form-check-input col-4 " type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                                <label class="col-8" for="inlineFormInputGroupUsername"> Internet</label>
                             </div>
                         </div>
                     </form>
@@ -301,7 +305,7 @@
         </div>
         <div class="container-fluid propietario" style=" border-bottom: solid #70c6db 2px;">
             <p> Propietario </p>
-            <div class="row">
+            <div class="row blanco">
                 <div class="col-sm-4">
                     <div class="mb-4 row">
                         <label for="inputPassword" class="col-sm-5 col-form-label">N° propietario</label>
@@ -366,7 +370,7 @@
         </div>
 
         <div class="container-fluid descipcionGaleria" style="margin-top: 15px;">
-            <div class="row ">
+            <div class="row blanco ">
                 <div class="col descripcion">
                     <p>Descripcion</p>
                     <div class="form-floating">
