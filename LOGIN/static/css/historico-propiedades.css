@@ -284,3 +284,42 @@ hr.solid {
   margin-top: 3%;
   color: rgb(255, 255, 255);
 }
+
+
+footer{
+  background-color: #70c6db;
+  margin-top: 5rem;
+  border-color:#123b4600 ;
+  font-family:'DM Sans', sans-serif
+
+}
+
+.footer-total{
+  background-color: black;
+}
+
+
+.foot-top{
+  border: 0px;
+  top: 0px;
+  height: 0.6rem;
+  background: linear-gradient(to right, #123b46, #51bcd6);
+  border-color:#123b4600 ;
+
+}
+.container-anexo{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #676767ad;
+
+}
+
+.text-break-all{
+  word-break: break-all;
+}
+
+.btn-outline-info{
+  color: white;
+  border-color: white;
+  border-width: 0.2rem;
+}
