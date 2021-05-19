@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>LOGIN</title>
+    <title>Inmobiliaria Domus</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
 
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,6 +22,8 @@
         
     <!-- Nuestro css-->
     <link rel="stylesheet" type="text/css" href="LOGIN\static\css\Login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!--Bootstrap 5-->
             
@@ -29,25 +32,27 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light  navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg"> 
+        <!-- <div class="container-fluid"> -->
                 
-        <a class="navbar-brand ml-3 mt-2 " href="index.html">
-            <img  src="images\LOGO3.png" width="200" alt="Logo Domus"  id="img-logo">
-        </a>
-        <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" 
+            <a class="navbar-brand ml-3 mt-2 " href="index.html">
+                <img  src="images\LOGO3.png" width="200" alt="Logo Domus"  id="img-logo">
+            </a>
+            <button class="navbar-toggler btn-menu ml-auto" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" 
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <div class="navbar-nav mr-auto ml-auto text-center">
-                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="Catalogo_clientes.html">Propiedades</a>
-                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="ReservarCita.html">Ofrece tu Propiedad</a>
-                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="ReservarCita.html">Contactanos</a>
-                <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="Conocenos.html">Acerca de Nosotros</a>
-                
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="navbar-nav ml-auto align-items-center">
+                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="Catalogo_clientes.html">Propiedades</a>
+                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="ReservarCita.html">Ofrece tu propiedad</a>
+                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="ReservarCita.html">Contactanos</a>
+                    <a class="nav-link text-dark ml-3 mr-3 font-weight-bold" href="Conocenos.html">Nosotros</a>
+                    
+                </div>
             </div>
-        </div> 
+        <!-- </div>   -->
     </nav>
 
     <div class="modal-dialog text-center" >
@@ -69,7 +74,7 @@
                     <div class="col-12 forgot">
                         <a href="#">¿Olvidaste la contraseña?</a>
                     </div>
-                    <button type="submit" class="btn btn-outline-info"><i class="fas fa-sign-in-alt"></i>
+                    <button type="submit" class="btn btn-outline-info button-login"><i class="fas fa-sign-in-alt"></i>
                         ENTRAR</button>
                 </form>
 
@@ -162,10 +167,10 @@
                     window.location.href = "Marketing.html";
                     break;
                 case "secretaria":
-                    window.location.href = "";
+                    window.location.href = "Secretaria.html";
                     break;
                 case "agente":
-                    window.location.href = "";
+                    window.location.href = "AgenteInmobiliario.html";
                     break;
                 case "cajera":
                     window.location.href = "Cajera.html";
@@ -180,7 +185,7 @@
                     window.location.href = "AdminSitio.html";
                     break;
                 case "gerente":
-                    window.location.href = "";
+                    window.location.href = "GerenteGeneral.html";
                     break;
                 default:
                     alert('Usuario inválido.');

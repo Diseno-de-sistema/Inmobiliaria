@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="editarPropiedad.css">
+    
+
+
+    <title>Editar Propiedades</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div "row justify-content-center">
+                <p style="border-bottom: 10px solid transparent; border-image: linear-gradient(to bottom, #ffffffb7 3%, #1c019698 100%) 1;">Editar Propiedad</p>
+                    <div class="row-4" style="border-bottom: solid rgb(109, 116, 211) 2px;" >
+                        <form class="row row-cols-lg-auto g-3 align-items-center formulario" id="formulario1">
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Nombre de Propiedad</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control input" id="inlineFormInputGroupUsername entrada" placeholder="Nombre Propiedad">    
+                            </div>
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Precio</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Precio Ej. 30.000.000">    
+                            </div>
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Año</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Ej. 1991">   
+                            </div>
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Estado</label>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected>-</option>
+                                    <option value="1">Alquiler</option>
+                                    <option value="2">Venta</option>
+                                    <option value="3">Alquilado</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row-4" style="border-bottom: solid rgb(109, 116, 211) 2px;">
+                        <form class="row row-cols-lg-auto g-3 align-items-center formulario">
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Tipo</label>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected>-</option>
+                                    <option value="1">Casa</option>
+                                    <option value="2">Chalet</option>
+                                    <option value="3">Departamento</option>
+                                    <option value="4">Cabaña</option>
+                                    <option value="5">Local</option>
+                                    <option value="6">Galpon</option>
+                                    <option value="7">Oficinas</option>
+                                    <option value="8">Terreno</option>
+                                    <!--<option value="9">9</option>-->
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Ambientes</label>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Baños</label>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Cocinas</label>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Livings</label>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Dormitorios</label>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="" for="inlineFormInputGroupUsername">Patios</label>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="inlineFormSelectPref">
+                                    <option selected>-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="menuMedio" style="border-bottom: solid rgb(109, 116, 211) 2px;">
+            <div class="row">
+                <div class="col">
+                    <form class="row row-cols-lg-auto g-3 align-items-center formulario">
+                        <div class="mb-4">
+                            <p> Muebles Incluidos</p>
+                            
+                            <div class="form-check form-switch mb-2" >
+                                <input class="form-check-label col-4" for="flexSwitchCheckDefault" id="caja" ></input>
+                                <label class="col-auto" for="inlineFormInputGroupUsername">Camas</label>
+                                <input class="form-check-input col-2" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                            </div>
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-label col-4" for="flexSwitchCheckDefault"></input>
+                                <label class="col-auto" for="inlineFormInputGroupUsername">Sofa</label>
+                                <input class="form-check-input col-2" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-label col-4" for="flexSwitchCheckDefault"></input>
+                                <label class="col-auto" for="inlineFormInputGroupUsername col-2">Mesa</label>
+                                <input class="form-check-input col-2" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-label col-4" for="flexSwitchCheckDefault"></input>
+                                <label class="col-auto" for="inlineFormInputGroupUsername">Ropero</label>
+                                <input class="form-check-input col-2" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form class="row row-cols-lg-auto g-3 align-items-center formulario">
+                        <div class="mb-4">
+                            <p> Electrodomesticos </p>
+                            
+                            <div class="form-check form-switch mb-2" >
+                                <label class="col-auto" for="inlineFormInputGroupUsername">Aire Acondicionado</label>
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                            </div>
+                            <div class="form-check form-switch mb-2">
+                                <label class="col-auto" for="inlineFormInputGroupUsername">Heladera </label>
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                            </div>
+                            <div class="form-check form-switch mb-2">
+                                <label class="col-auto" for="inlineFormInputGroupUsername"> Microondas</label>
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                            </div>
+                            <div class="form-check form-switch mb-2">
+                                <label class="col-auto" for="inlineFormInputGroupUsername"> Lavarropa</label>
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form class="row row-cols-lg-auto g-3 align-items-center formulario">
+                        <div class="mb-3">
+                            <p> Servicios Adheridos </p>
+                            
+                            <div class="form-check form-switch mb-2" >
+                                <label class="col-auto" for="inlineFormInputGroupUsername"> Limpieza</label>
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                            </div>
+                            <div class="form-check form-switch mb-2">
+                                <label class="col-auto" for="inlineFormInputGroupUsername">Luz </label>
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                            </div>
+                            <div class="form-check form-switch mb-2">
+                                <label class="col-auto" for="inlineFormInputGroupUsername"> Agua</label>
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                            </div>
+                            <div class="form-check form-switch mb-2">
+                                <label class="col-auto" for="inlineFormInputGroupUsername"> Internet</label>
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault caja1" value="2" onclick="activarCaja()" >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid propietario" style=" border-bottom: solid rgb(109, 116, 211) 2px;">
+            <p> Propietario </p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-5 col-form-label">N° propietario</label>
+                        <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-5 col-form-label">DNI</label>
+                        <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-5 col-form-label">Nombre y Apellido</label>
+                        <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-5 col-form-label">Tipo de Cliente</label>
+                        <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-5 col-form-label">Telefono</label>
+                        <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-5 col-form-label">Email</label>
+                        <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-5 col-form-label">Direccion</label>
+                        <div class="col-sm-7">
+                        <input type="Text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-5 col-form-label">Pais</label>
+                        <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-4 row">
+                        <label for="inputPassword" class="col-sm-5 col-form-label">Provincia</label>
+                        <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid descipcionGaleria" style="margin-top: 15px;">
+            <div class="row ">
+                <div class="col descripcion">
+                    <p>Descripcion</p>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Descripcion</label>
+                    </div>
+                </div>
+                <div class="col galeria">
+                    <div class="row"  style="margin-bottom: 10px;" id="galeriaCabecera">
+                        <div class="col">
+                            <p>Galeria</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary">Agregar Imagen</button>
+                        </div>
+                    </div>
+                    
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="/img/casa1.jpg" class="" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="/img/casa2.jpg" class="" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="/img/casa3.jpg" class="" alt="">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="/img/casa4.jpg" class="" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid botonGuardar">
+            <div class="container-fluid col">
+                <div class="row">
+                  <div class="col-4 align-self-start">
+                  </div>
+                  <div class="col-6 align-self-center" style="margin-top: 25px;">
+                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                  </div>
+                  <div class="col-4 align-self-end">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    
+    function activarCaja(){
+            
+        let isChecked = document.getElementById('caja1').value;
+        console.log(isChecked);
+        if (!isChecked){
+            document.getElementById('caja').disabled=false
+        }
+        if (isChecked){
+            document.getElementById('caja').inn=true
+        }
+    }
+</script>
+</html>
