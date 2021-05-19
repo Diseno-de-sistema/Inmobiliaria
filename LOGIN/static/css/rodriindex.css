@@ -74,6 +74,11 @@ h5{
     height: 202.67px;
 }
 
+#texto_con_tildes{
+    margin-top: 2%;
+    text-align: left;
+}
+
 footer{
     background-color: #70c6db;
     margin-top: 5rem;
@@ -183,7 +188,7 @@ box-shadow: 3px 3px 10px rgba(213, 213, 213, 0.542);
 
 .h4{
     
-    font-size: 250%;
+    font-size: 200%;
 }
 .h3{
    color: #4bc4e2;
