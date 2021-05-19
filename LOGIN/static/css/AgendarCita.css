@@ -84,7 +84,22 @@ footer{
     background: linear-gradient(to right, #123b46, #51bcd6);
     border-color:#123b4600 ;
 
+}
+.container-anexo{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #676767ad;
 
+}
+
+.text-break-all{
+    word-break: break-all;
+}
+
+.btn-outline-info{
+    color: white;
+    border-color: white;
+    border-width: 0.2rem;
 }
 
 .text-break-all{
