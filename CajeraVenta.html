@@ -201,7 +201,7 @@
                     <input type="number" class="form-control" required>
 
                     <label for="Precio" class="form-label text-light">Precio</label>
-                    <input type="text" class="form-control" required>
+                    <input type="number" class="form-control" required>
 
                     <label for="Moneda" class="form-label text-light">Moneda</label>
                     <select name="Moneda" class="form-control" id="Moneda" required>
@@ -231,7 +231,21 @@
         </div>
 
         <div class="container">
-            <p class="text-white">AGREGAR IMAGEN EJEMPLO RECIBO</p>
+            <div class="text-center">
+                <img src="images/comprobanteVenta.png" class="img-fluid" alt="Comprobante venta">
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-info" style="float: right;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-printer-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                        <path
+                            d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                    </svg>Imprimir
+                </button>
+            </div>
         </div>
     </div>
 
