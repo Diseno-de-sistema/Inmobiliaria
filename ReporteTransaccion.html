@@ -43,6 +43,10 @@
             .hide-border {
                 border-left: 0 !important;
             }
+
+            .hide-border-bottom {
+                border-bottom: 0 !important;
+            }
         }
 
         .row {
@@ -165,14 +169,6 @@
                             </div>
                         </div>
                         <div class="col-md px-1 border-left border-right border-secondary text-center">
-                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
-                            <p class="border">Entrada</p>
-                        </div>
-                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
-                            <label for="fecha" class="form-label">Tipo de Caja</label>
-                            <p class="border">Caja Alquiler</p>
-                        </div>
-                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
                             <label for="fecha" class="form-label">Valor</label>
                             <p class="border">$15000</p>
                         </div>
@@ -203,14 +199,6 @@
                             </div>
                         </div>
                         <div class="col-md px-1 border-left border-right border-secondary text-center">
-                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
-                            <p class="border">Entrada</p>
-                        </div>
-                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
-                            <label for="fecha" class="form-label">Tipo de Caja</label>
-                            <p class="border">Caja Venta</p>
-                        </div>
-                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
                             <label for="fecha" class="form-label">Valor</label>
                             <p class="border">$15000000</p>
                         </div>
@@ -241,14 +229,6 @@
                             </div>
                         </div>
                         <div class="col-md px-1 border-left border-right border-secondary text-center">
-                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
-                            <p class="border">Entrada</p>
-                        </div>
-                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
-                            <label for="fecha" class="form-label">Tipo de Caja</label>
-                            <p class="border">Caja Alquiler</p>
-                        </div>
-                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
                             <label for="fecha" class="form-label">Valor</label>
                             <p class="border">$20000</p>
                         </div>
@@ -264,7 +244,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="mb-3">
                 <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
                     aria-expanded="false" aria-controls="collapsePropiedades" class="btn-info d-lg-none w-100">
                     <span class="dropdown-toggle">Movimiento #0005</span>
@@ -279,14 +259,6 @@
                             </div>
                         </div>
                         <div class="col-md px-1 border-left border-right border-secondary text-center">
-                            <label for="tipo" class="form-label">Tipo de Movimiento</label>
-                            <p class="border">Entrada</p>
-                        </div>
-                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
-                            <label for="fecha" class="form-label">Tipo de Caja</label>
-                            <p class="border">Caja Venta</p>
-                        </div>
-                        <div class="col-md px-1 border-left border-right border-secondary hide-border text-center">
                             <label for="fecha" class="form-label">Valor</label>
                             <p class="border">$6000000</p>
                         </div>
@@ -300,6 +272,71 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Movimiento #0001</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>Tipo de movimiento: Entrada</li>
+                                <li>Fecha: 19/05/2021</li>
+                                <li>Cliente: Juan Perez</li>
+                                <li>Propiedad: Casa Residencial</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="d-lg-block">
+                    <div class="row g-0 border-top border-bottom border-secondary reportes bg-light">
+                        <div
+                            class="col-md px-1 border-left border-secondary reportes text-center border-bottom hide-border-bottom">
+                            <p>Transacciones</p>
+                            <p class="border">5</p>
+                        </div>
+                        <div
+                            class="col-md  d-lg-block ps-1 border-left border-secondary reportes text-center border-bottom hide-border-bottom">
+                            <label for="tipo" class="form-label">Total Ingreso</label>
+                            <p class="border">$21065000</p>
+                        </div>
+                        <div
+                            class="col-md px-1 border-left border-secondary text-center border-bottom hide-border-bottom">
+                            <label for="tipo" class="form-label">Total Egreso</label>
+                            <p class="border">$0</p>
+                        </div>
+                        <div class="col-md px-1 border-left border-secondary text-center">
+                            <label for="fecha" class="form-label">Total General</label>
+                            <p class="border">$21065000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-info mt-5" style="float: right;">Imprimir reporte
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-printer-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                        <path
+                            d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                    </svg>
+                </button>
+
+                <button type="button" class="btn btn-info mt-5 mr-3" style="float: right;"><i class="far fa-save"></i>
+                    Guardar</button>
             </div>
 
             <div class="container py-5"></div>

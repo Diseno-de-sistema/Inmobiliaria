@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-light navbar-expand-lg ">
         <a class="navbar-brand ml-3 mt-2" href="Catalogo_clientes.html">
             <img src="images/LOGO3.png" width="200" alt="Logo Domus" id="img-logo">
@@ -40,7 +40,7 @@
             </div>
         </div>
     </nav>
-    
+
 
     <main class="bg-image">
         <div class="image-style">
@@ -48,157 +48,255 @@
             <div class="container pt-5">
                 <h1 class="fw-bold fs-2 text-light">REPORTES</h1>
 
-                <hr class="my-3 bg-light">
+                <hr class="my-3 solid">
 
-                <h2 class="fs-6 text-light">GENERADOR DE REPORTES POR PERIODO</h2>
+                <h2 class="fs-4 text-light">CONSULTAR REPORTES POR PERIODO</h2>
 
-                <form action="" class="bg-light reportes">
-                    <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropiedades"
-                        aria-expanded="false" aria-controls="collapsePropiedades" class="btn-primary d-lg-none w-100">
-                        <span class="dropdown-toggle">Propiedades</span>
-                    </button>
-                    <div class="collapse d-lg-block" id="collapsePropiedades">
-                        <div class="row g-0 border-top border-bottom border-secondary reportes">
-                            <div
-                                class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                <div class="py-3">
-                                    <img src="images/resultado-de-imagem-para-casa-di-legno-moderna-home-decoration.jpg"
-                                        alt="" width="60" height="60">
-                                    Propiedades
-                                </div>
-                            </div>
-                            <div class="col-md px-1 border-start border-end border-secondary">
-                                <label for="tipo" class="form-label">Tipo</label>
-                                <select class="form-select" id="tipo" name="tipo" required>
-                                    <option value="diario" selected>Diario</option>
-                                    <option value="mensual">Mensual</option>
-                                    <option value="anual">Anual</option>
-                                </select>
-                            </div>
-                            <div class="col-md px-1 border-start border-end border-secondary hide-border">
-                                <label for="fecha" class="form-label">Fecha</label>
-                                <input type="date" id="fecha" name="reporte-fecha" value="" class="form-control">
-                            </div>
-                            <div class="col-md py-4 px-1 border-start border-end border-secondary hide-border reportes">
-                                <a href="ReportesVista.html" class="btn w-100 btn-info">
-                                    Vizualizar
-                                </a>
-                            </div>
+                <form onsubmit="mostrarReportes(); return false;">
+                    <div class="formularios">
+                        <label for="fechaInicio" class="form-label text-light">Desde</label>
+                        <input type="date" name="fechaInicio" class="form-control mb-3" id="fechaInicio"
+                            value="2021-05-18" required>
+
+                        <label for="fechaFin" class="form-label text-light">Hasta</label>
+                        <input type="date" name="fechaFin" class="form-control mb-3" id="fechaFin" value="2021-05-19"
+                            required>
+
+                        <label for="tipo" class="form-label text-light">Tipo</label>
+                        <select name="tipo" id="tipo" class="form-select mb-3" required>
+                            <option value="Propiedades">Propiedades</option>
+                            <option value="Ventas">Ventas</option>
+                            <option value="Alquileres">Alquileres</option>
+                            <option value="Clientes">Clientes</option>
+                        </select>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-info">Consultar</button>
+                            <button type="reset" class="btn btn-info" onclick="reiniciarDatos();">Reiniciar</button>
                         </div>
                     </div>
                 </form>
 
-                <form action="" class="mt-3 bg-light reportes">
-                    <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseVentas"
-                        aria-expanded="false" aria-controls="collapseVentas" class="d-lg-none w-100">
-                        <span class="dropdown-toggle">Ventas</span>
-                    </button>
-                    <div class="collapse d-lg-block" id="collapseVentas">
-                        <div class="row g-0 border-top border-bottom border-secondary reportes">
-                            <div
-                                class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                <div class="py-3">
-                                    <img src="images/unknown.jpg" alt="" width="60" height="60">
-                                    Ventas
-                                </div>
-                            </div>
-                            <div class="col-md px-1 border-start border-end border-secondary">
-                                <label for="tipo" class="form-label">Tipo</label>
-                                <select class="form-select" id="tipo" name="tipo" required>
-                                    <option value="diario" selected>Diario</option>
-                                    <option value="mensual">Mensual</option>
-                                    <option value="anual">Anual</option>
-                                </select>
-                            </div>
-                            <div class="col-md px-1 border-start border-end border-secondary hide-border">
-                                <label for="fecha" class="form-label">Fecha</label>
-                                <input type="date" id="fecha" name="reporte-fecha" value="" class="form-control">
-                            </div>
-                            <div class="col-md py-4 px-1 border-start border-end border-secondary hide-border reportes">
-                                <a href="ReportesVista.html" class="btn w-100 btn-info">
-                                    Vizualizar
+                <div id="Mostrar" style="display: none;">
+                    <hr class="my-3 solid">
 
-                                </a>
-                            </div>
+                    <h2 class="fs-4 text-light mb-4">Reportes desde <span id="inicio"></span> hasta <span
+                            id="fin"></span> de tipo <span id="tipoReporte"></span></h2>
+
+                    <div class="row bg-white mb-3">
+                        <div class="col-md text-center">
+                            <p>Reporte N°</p>
+                            <p>1342</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Fecha generación</p>
+                            <p>18/05/2021</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Periodo</p>
+                            <p>Diario</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Fecha del reporte</p>
+                            <p>20/04/2021</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <button type="button" class="btn btn-info mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-printer-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                                    <path
+                                        d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="btn btn-info mt-4 mr-3"><i class="far fa-save"></i>
+                            </button>
                         </div>
                     </div>
-                </form>
 
-                <form action="" class="mt-3 bg-light reportes">
-                    <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlquileres"
-                        aria-expanded="false" aria-controls="collapseAlquileres" class="d-lg-none w-100">
-                        <span class="dropdown-toggle">Alquileres</span>
-                    </button>
-                    <div class="collapse d-lg-block" id="collapseAlquileres">
-                        <div class="row g-0 border-top border-bottom border-secondary reportes">
-                            <div
-                                class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                <div class="py-3">
-                                    <img src="images/dpto6to.jpg" alt="" width="60" height="60">
-                                    Alquileres
-                                </div>
-                            </div>
-                            <div class="col-md px-1 border-start border-end border-secondary">
-                                <label for="tipo" class="form-label">Tipo</label>
-                                <select class="form-select" id="tipo" name="tipo" required>
-                                    <option value="diario" selected>Diario</option>
-                                    <option value="mensual">Mensual</option>
-                                    <option value="anual">Anual</option>
-                                </select>
-                            </div>
-                            <div class="col-md px-1 border-start border-end border-secondary hide-border">
-                                <label for="fecha" class="form-label">Fecha</label>
-                                <input type="date" id="fecha" name="reporte-fecha" value="" class="form-control">
-                            </div>
-                            <div class="col-md py-4 px-1 border-start border-end border-secondary hide-border reportes">
-                                <a href="ReportesVista.html" class="btn w-100 btn-info">
-                                    Vizualizar
+                    <div class="row bg-white mb-3">
+                        <div class="col-md text-center">
+                            <p>Reporte N°</p>
+                            <p>1343</p>
+                        </div>
 
-                                </a>
-                            </div>
+                        <div class="col-md text-center">
+                            <p>Fecha generación</p>
+                            <p>18/05/2021</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Periodo</p>
+                            <p>Mensual</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Fecha del reporte</p>
+                            <p>04/2021</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <button type="button" class="btn btn-info mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-printer-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                                    <path
+                                        d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="btn btn-info mt-4 mr-3"><i class="far fa-save"></i>
+                            </button>
                         </div>
                     </div>
-                </form>
 
-                <form action="" class="mt-3 bg-light reportes">
-                    <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseClientes"
-                        aria-expanded="false" aria-controls="collapseClientes" class="d-lg-none w-100">
-                        <span class="dropdown-toggle">Clientes</span>
-                    </button>
-                    <div class="collapse d-lg-block" id="collapseClientes">
-                        <div class="row g-0 border-top border-bottom border-secondary reportes">
-                            <div
-                                class="col-md d-none d-sm-none d-md-none d-lg-block ps-1 border-start border-secondary reportes">
-                                <div class="py-3">
-                                    <img src="images/5_Key_Characteristics_of_Real_Estate_Agents@2x.jpg" alt=""
-                                        width="60" height="60">
-                                    Clientes
-                                </div>
-                            </div>
-                            <div class="col-md px-1 border-start border-end border-secondary">
-                                <label for="tipo" class="form-label">Tipo</label>
-                                <select class="form-select" id="tipo" name="tipo" required>
-                                    <option value="diario" selected>Diario</option>
-                                    <option value="mensual">Mensual</option>
-                                    <option value="anual">Anual</option>
-                                </select>
-                            </div>
-                            <div class="col-md px-1 border-start border-end border-secondary hide-border">
-                                <label for="fecha" class="form-label">Fecha</label>
-                                <input type="date" id="fecha" name="reporte-fecha" value="" class="form-control">
-                            </div>
-                            <div class="col-md py-4 px-1 border-start border-end border-secondary hide-border reportes">
-                                <a href="ReportesVista.html" class="btn w-100 btn-info">
-                                    Vizualizar
+                    <div class="row bg-white mb-3">
+                        <div class="col-md text-center">
+                            <p>Reporte N°</p>
+                            <p>1344</p>
+                        </div>
 
-                                </a>
-                            </div>
+                        <div class="col-md text-center">
+                            <p>Fecha generación</p>
+                            <p>18/05/2021</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Periodo</p>
+                            <p>Diario</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Fecha del reporte</p>
+                            <p>26/04/2021</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <button type="button" class="btn btn-info mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-printer-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                                    <path
+                                        d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="btn btn-info mt-4 mr-3"><i class="far fa-save"></i>
+                            </button>
                         </div>
                     </div>
-                </form>
-                
+
+                    <div class="row bg-white mb-3">
+                        <div class="col-md text-center">
+                            <p>Reporte N°</p>
+                            <p>1345</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Fecha generación</p>
+                            <p>19/05/2021</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Periodo</p>
+                            <p>Anual</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Fecha del reporte</p>
+                            <p>2020</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <button type="button" class="btn btn-info mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-printer-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                                    <path
+                                        d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="btn btn-info mt-4 mr-3"><i class="far fa-save"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row bg-white mb-3">
+                        <div class="col-md text-center">
+                            <p>Reporte N°</p>
+                            <p>1346</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Fecha generación</p>
+                            <p>19/05/2021</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Periodo</p>
+                            <p>Mensual</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <p>Fecha del reporte</p>
+                            <p>02/2021</p>
+                        </div>
+
+                        <div class="col-md text-center">
+                            <button type="button" class="btn btn-info mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-printer-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                                    <path
+                                        d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="btn btn-info mt-4 mr-3"><i class="far fa-save"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="container py-5 mt-5"></div>
             </div>
+
+            <script>
+                function mostrarReportes() {
+                    let mostrarDiv = document.getElementById("Mostrar");
+
+                    mostrarDiv.style.display = "block";
+
+                    let fechaI = document.getElementById("fechaInicio").value;
+                    let fechaF = document.getElementById("fechaFin").value;
+                    let tipo = document.getElementById("tipo").value;
+
+                    cargarData(fechaI, fechaF, tipo);
+                }
+
+                function reiniciarDatos() {
+                    let div = document.getElementById("Mostrar");
+
+                    div.style.display = "none";
+                }
+
+                function cargarData(fechaI, fechaF, tipo) {
+                    let dataI = document.getElementById("inicio").innerHTML = fechaI;
+                    let dataF = document.getElementById("fin").innerHTML = fechaF;
+                    let dataT = document.getElementById("tipoReporte").innerHTML = tipo;
+                }
+            </script>
     </main>
 
 
@@ -219,14 +317,15 @@
 
             <div class="row mt-3 ">
                 <div class="col-12 col-md text-center">
-                    <img class="ml-3 mb-2 img-fluid" src="images/logo3_2.png" alt="" width="300" >
+                    <img class="ml-3 mb-2 img-fluid" src="images/logo3_2.png" alt="" width="300">
                     <br>
-                
+
                     <div class="col-10  ml-auto mr-auto">
-                        <p class=" mb-3 text-white font-italic font-weight-bold text-md"> Nos comprometemos a materializar el hogar de sus sueños</p>
-                        
+                        <p class=" mb-3 text-white font-italic font-weight-bold text-md"> Nos comprometemos a
+                            materializar el hogar de sus sueños</p>
+
                     </div>
-                    
+
                     <div>
                         <i class="fab fa-cc-paypal fa-3x mr-3 ml-3"></i>
                         <i class="fab fa-cc-visa fa-3x mr-3 ml-3"></i>
@@ -236,33 +335,41 @@
                 <div class="col-6 col-md">
                     <h5>Sobre Nosotros</h5>
                     <ul class="list-unstyled text-small">
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Métodos de Pago</a></li>
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Términos y Condiciones</a></li>
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="NuestroTeam.html">Nuestro Equipo</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Métodos de
+                                Pago</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Términos y
+                                Condiciones</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white"
+                                href="NuestroTeam.html">Nuestro Equipo</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled text-small">
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Contactanos Via Web</a></li>
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">TEL: 3624-665582</a></li>
-                    <li class="mb-3">EMAIL:<a class="link-secondary text-decoration-none text-white text-break-all" href="mailto:info@inmobiliariadomus.com">info@inmobiliariadomus.com </a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Contactanos
+                                Via Web</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">TEL:
+                                3624-665582</a></li>
+                        <li class="mb-3">EMAIL:<a class="link-secondary text-decoration-none text-white text-break-all"
+                                href="mailto:info@inmobiliariadomus.com">info@inmobiliariadomus.com </a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5>Nuestra Direccion</h5>
                     <ul class="list-unstyled text-small">
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">French 450</a></li>
-                    <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Resistencia, Chaco - Argentina</a></li>
-                    <li class="mb-3 "> <i class="fab fa-facebook fa-3x  mr-3  "></i>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">French
+                                450</a></li>
+                        <li class="mb-3"><a class="link-secondary text-decoration-none text-white" href="#">Resistencia,
+                                Chaco - Argentina</a></li>
+                        <li class="mb-3 "> <i class="fab fa-facebook fa-3x  mr-3  "></i>
 
-                                        <i class="fab fa-instagram fa-3x mr-3 ml-1"></i>
+                            <i class="fab fa-instagram fa-3x mr-3 ml-1"></i>
 
-                                        <i class="fab fa-twitter-square fa-3x mr-3 ml-1"></i>
+                            <i class="fab fa-twitter-square fa-3x mr-3 ml-1"></i>
 
-                                        <i class="fab fa-youtube-square fa-3x mr-3 ml-1"></i>
-                            </li>
-                    
+                            <i class="fab fa-youtube-square fa-3x mr-3 ml-1"></i>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -271,7 +378,8 @@
             <div class="row footer-total mt-3 mb-3">
                 <div class="col-md-12 text-center linea1 mt-3 mb-3">
                     <div class="copyright">
-                        <p class="text-light ">© <span>2021</span> <a href="#" class="transition text-white ">Domus Inc.  -  Grupo 3 </a>- All rights reserved .-</p>
+                        <p class="text-light ">© <span>2021</span> <a href="#" class="transition text-white ">Domus Inc.
+                                - Grupo 3 </a>- All rights reserved .-</p>
                     </div>
                 </div>
             </div>
